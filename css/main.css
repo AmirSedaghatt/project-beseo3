@@ -16,7 +16,6 @@ time, mark, audio, video {
     padding: 0;
     border: 0;
     font-size: 62.5%;
-    font: inherit;
     vertical-align: baseline;
     box-sizing: border-box;
 }
@@ -59,7 +58,6 @@ table {
     --card-box-shadow: rgba(44, 34, 100, 0.2) 0px 10px 30px;
     --color-btn: rgb(123, 102, 239);
     --color-light-btn: rgb(197, 196, 252);
-    --color-btn-hover: rgba(255, 0, 0, 0.05);
     --color-white: #fff;
     --color-black: #000;
 }
