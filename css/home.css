@@ -175,11 +175,10 @@ html {
 .feat__label {
     display: inline-block;
     margin-bottom: 30px;
-    padding: 2px 15px;
-    font-family: 'Archivo';
+    padding: 2px 16px;
     font-weight: 700;
-    font-size: 13px;
-    line-height: 19px;
+    font-size: 1.4rem;
+    line-height: 20px;
     letter-spacing: 0px;
     text-decoration: none;
     border-style: none;
@@ -189,34 +188,33 @@ html {
     background-color: var(--color-label-bg);
 }
 
+/* makes feature title responsive */
+.title--wrapper {
+    width: 75%;
+}
+
+/* makes texts responsive */
+.txt--wrapper {
+    width: 80%;
+}
+
 /* feature title */
 .feat__title {
-    width: auto;
-    height: auto;
     margin-bottom: 30px;
-    font-family: 'Archivo';
     font-weight: 700;
-    font-size: 32px;
+    font-size: 3.2rem;
     line-height: 32px;
     letter-spacing: 0px;
     text-decoration: none;
     color: var(--color-headings);
 }
 
-/* makes texts responsive */
-.txt-wrapper {
-    width: 80%;
-}
-
 /* feature description */
 .feat__desc {
-    width: auto;
-    height: auto;
     margin-bottom: 30px;
-    font-family: 'Archivo';
     font-weight: 400;
-    font-size: 13px;
-    line-height: 19px;
+    font-size: 1.4rem;
+    line-height: 20px;
     letter-spacing: 0px;
     text-decoration: none;
     color: var(--color-body);
@@ -252,12 +250,9 @@ html {
 
 /* feature's title */
 .item__title {
-    width: auto;
-    height: auto;
-    margin-bottom: 10px;
-    font-family: 'Archivo';
+    margin-bottom: 25px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 20px;
     letter-spacing: 0px;
     text-decoration: none;
@@ -267,10 +262,9 @@ html {
 /* feature's description */
 .item__desc {
     margin-bottom: 15px;
-    font-family: 'Archivo';
     font-weight: 400;
-    font-size: 13px;
-    line-height: 19px;
+    font-size: 1.4rem;
+    line-height: 20px;
     letter-spacing: 0px;
     text-decoration: none;
     color: var(--color-body);
@@ -278,6 +272,7 @@ html {
 
 /* Media Queries Here */
 @media (min-width: 360px) {
+    /* section1 media query changes */
     .masthead__label {
         padding: 0px 4px;
         font-size: 0.4rem;
@@ -302,6 +297,7 @@ html {
 }
 
 @media (min-width: 480px) { 
+    /* section1 media query changes */
     .space-around {
         padding: 6px 0;
     }
@@ -327,9 +323,25 @@ html {
         font-size: 0.8rem;
         line-height: 16px;
     }
+
+    /* section2 media query changes */
+    .feat__title {
+        font-size: 4.0rem;
+        line-height: 40px;
+    }
+
+    .feat__desc {
+        line-height: 24px;
+    }
+
+    .item__title {
+        font-size: 1.8rem;
+        line-height: 26px;
+    }
 }
 
 @media (min-width: 600px) {
+    /* section1 media query changes */
     .space-around {
         padding: 8px 0;
     }
@@ -355,9 +367,25 @@ html {
         font-size: 0.8rem;
         line-height: 20px;
     }
+
+    /* section2 media query changes */
+    .feat__title {
+        font-size: 4.0rem;
+        line-height: 40px;
+    }
+
+    .feat__desc {
+        line-height: 24px;
+    }
+
+    .item__title {
+        font-size: 1.8rem;
+        line-height: 26px;
+    }
 }
 
 @media (min-width: 768px) {
+    /* section1 media query changes */
     .space-around {
         padding: 10px 0;
     }
@@ -383,9 +411,35 @@ html {
         font-size: 1rem;
         line-height: 24px;
     }
+
+    /* section2 media query changes */
+    .feat__label {
+        line-height: 22px;
+    }
+
+    .feat__title {
+        font-size: 4.6rem;
+        line-height: 46px;
+    }
+
+    .feat__desc {
+        font-size: 1.6rem;
+        line-height: 26px;
+    }
+
+    .feat__items {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .item__title {
+        font-size: 2rem;
+        line-height: 28px;
+    }
 }
 
 @media (min-width: 900px) {
+    /* section1 media query changes */
     .space-around {
         padding: 12px 0;
     }
@@ -411,9 +465,39 @@ html {
         font-size: 1.2rem;
         line-height: 28px;
     }
+
+    /* section2 media query changes */
+    .feat__label {
+        line-height: 22px;
+    }
+
+    .feat__title {
+        font-size: 4.6rem;
+        line-height: 46px;
+    }
+
+    .feat__desc {
+        font-size: 1.6rem;
+        line-height: 26px;
+    }
+
+    .feat__items {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .item__title {
+        font-size: 2rem;
+        line-height: 28px;
+    }
+
+    .item__desc {
+        line-height: 24px;
+    }
 }
 
 @media (min-width: 1024px) {
+    /* section1 media query changes */
     .space-around {
         padding: 14px 0;
     }
@@ -438,5 +522,35 @@ html {
         padding: 0px 20px;
         font-size: 1.4rem;
         line-height: 32px;
+    }
+
+    /* section2 media query changes */
+    .feat__label {
+        line-height: 26px;
+    }
+
+    .feat__title {
+        font-size: 5.4rem;
+        line-height: 54px;
+    }
+
+    .feat__desc {
+        font-size: 1.8rem;
+        line-height: 30px;
+    }
+
+    .feat__items {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .item__title {
+        font-size: 2.4rem;
+        line-height: 34px;
+    }
+
+    .item__desc {
+        font-size: 1.6rem;
+        line-height: 28px;
     }
 }
