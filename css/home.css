@@ -1,0 +1,323 @@
+/* imports */
+@import "/css/main.css";
+@font-face {
+    font-family: 'Archivo', sans-serif;
+    src: url(/assets/fonts/archivo/Archivo-VariableFont_wdth\,wght.ttf);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo';
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+/* ------------------------- section1, masthead here --------------------------- */
+/* Main Container */
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content Container */
+.content-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contents */
+.contents {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Section-one Image style */
+.sec1-img {
+    width: 100%;
+    background-image: url(/assets/images/home/seo3-sec1-img.png);
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Section1 masthead style */
+.masthead {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 16px;
+}
+
+/* Creating a white space around masthead texts */
+.space-around {
+    padding: 4px 0;
+}
+
+/* Welcome to beseo label style */
+.masthead__label {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    padding: 0px 2px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.2rem;
+    line-height: 4px;
+    letter-spacing: 0px;
+    text-decoration: none;
+    border-style: none;
+    border-radius: 15px;
+    border-color: rgba(255, 0, 0, 0);
+    color: var(--color-label);
+    background-color: var(--color-label-bg);
+}
+
+/* Masthead main text style */
+.masthead__title {
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 12px;
+    letter-spacing: 0px;
+    text-decoration: none;
+    color: var(--color-headings);
+    transform-origin: 50% 50% 0px;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+/* Masthead description text style */
+.masthead__desc {
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: 400;
+    font-size: 0.4rem;
+    line-height: 6px;
+    letter-spacing: 0px;
+    text-decoration: none;
+    color: var(--color-body);
+    transform: translate3d(0px, 0px, 0px);
+    transform-origin: 50% 50% 0px;
+}
+
+/* Other pages links here */
+.masthead__links {
+    display: flex;
+    gap: 10px;
+}
+
+/* Masthead 'a' tag styles */
+.link {
+    padding: 0px 8px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.4rem;
+    line-height: 8px;
+    letter-spacing: 0px;
+    text-decoration: none;
+    border-style: none;
+    border-radius: 30px;
+    border-width: 0px;
+    border-color: rgba(255, 255, 255, 0);
+    color: var(--color-white);
+    background-color: var(--color-btn);
+    filter: blur(0px) grayscale(0%) brightness(100%);
+    transform: translate3d(0px, 0px, 0px);
+    transform-origin: 50% 50% 0px;
+    opacity: 0.9;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* link modifier */
+.link--secondary {
+    background-color: var(--color-light-btn);
+    opacity: 0.7;
+}
+
+/* Change link opacity on hover */
+.masthead__links a:hover {
+    opacity: 1;
+}
+
+/* Media Queries Here */
+@media (min-width: 360px) and (max-width: 480px) {
+    .masthead__label {
+        padding: 0px 4px;
+        font-size: 0.4rem;
+        line-height: 6px;
+    }
+
+    .masthead__title {
+        font-size: 1.4rem;
+        line-height: 14px;
+    }
+
+    .masthead__desc {
+        font-size: 0.4rem;
+        line-height: 8px;
+    }
+
+    .link {
+        padding: 0px 10px;
+        font-size: 0.6rem;
+        line-height: 12px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 600px) { 
+    .space-around {
+        padding: 6px 0;
+    }
+
+    .masthead__label {
+        padding: 0px 6px;
+        font-size: 0.6rem;
+        line-height: 10px;
+    }
+
+    .masthead__title {
+        font-size: 2rem;
+        line-height: 20px;
+    }
+
+    .masthead__desc {
+        font-size: 0.5rem;
+        line-height: 10px;
+    }
+
+    .link {
+        padding: 0px 12px;
+        font-size: 0.8rem;
+        line-height: 16px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .space-around {
+        padding: 8px 0;
+    }
+
+    .masthead__label {
+        padding: 0px 8px;
+        font-size: 0.8rem;
+        line-height: 12px;
+    }
+
+    .masthead__title {
+        font-size: 2.4rem;
+        line-height: 24px;
+    }
+
+    .masthead__desc {
+        font-size: 0.6rem;
+        line-height: 10px;
+    }
+
+    .link {
+        padding: 0px 14px;
+        font-size: 0.8rem;
+        line-height: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    .space-around {
+        padding: 10px 0;
+    }
+
+    .masthead__label {
+        padding: 0px 8px;
+        font-size: 1rem;
+        line-height: 14px;
+    }
+
+    .masthead__title {
+        font-size: 3rem;
+        line-height: 30px;
+    }
+
+    .masthead__desc {
+        font-size: 0.8rem;
+        line-height: 12px;
+    }
+
+    .link {
+        padding: 0px 16px;
+        font-size: 1rem;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1024px) {
+    .space-around {
+        padding: 12px 0;
+    }
+
+    .masthead__label {
+        padding: 0px 10px;
+        font-size: 1rem;
+        line-height: 16px;
+    }
+
+    .masthead__title {
+        font-size: 3.6rem;
+        line-height: 36px;
+    }
+
+    .masthead__desc {
+        font-size: 1rem;
+        line-height: 16px;
+    }
+
+    .link {
+        padding: 0px 18px;
+        font-size: 1.2rem;
+        line-height: 28px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .space-around {
+        padding: 14px 0;
+    }
+
+    .masthead__label {
+        padding: 0px 12px;
+        font-size: 1.2rem;
+        line-height: 18px;
+    }
+
+    .masthead__title {
+        font-size: 4.2rem;
+        line-height: 42px;
+    }
+
+    .masthead__desc {
+        font-size: 1.2rem;
+        line-height: 18px;
+    }
+
+    .link {
+        padding: 0px 20px;
+        font-size: 1.4rem;
+        line-height: 32px;
+    }
+}
