@@ -1,6 +1,6 @@
 @font-face {
     font-family:"archivo";
-    src: url("./fonts/archivo/Archivo-VariableFont_wdth\,wght.ttf");
+    src: url("../assets/fonts/archivo/Archivo-VariableFont_wdth\,wght.ttf");
 }
 /* Reset */
 html, body, div, span, applet, object, iframe,
@@ -219,4 +219,279 @@ table {
     line-height: 1.9;
     margin-bottom: 15px;
 
+}
+
+/*------------------------> media query<----------------------- */
+
+
+/* -----------------------480-------------------------- */
+
+@media (min-width: 480px) {
+    .container{
+        width: 90%;
+    }
+    .description__title h1{
+        font-size: 5.3rem;
+        font-weight:700;
+        line-height:5.3rem;
+        margin-bottom: 15px;
+        
+    }
+    .services__description{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        
+    }
+    .services__image{
+        max-width: 100%;
+        height:auto;
+    }
+    .services__image img{
+        width: 100%;
+        object-fit: contain;
+    }
+    .faq__title h2{
+        font-size: 4.1rem;
+        line-height: 4.1rem;
+    }
+    .faq__description p{
+        font-size: 1.3rem;
+        line-height:1.5;
+        width: 95%;
+        
+    }
+    .faq__btn a{
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+    .options__wrapper{
+        padding: 10px;
+    }
+    
+    .options{
+        display: flex;
+        gap: 0px;
+    }
+  
+    .icon__description{
+        margin-left: 40px;
+    }
+    .icon__description h4{
+        font-size: 1.8rem;
+    }
+}
+
+/* ---------------->600<------------- */
+
+
+@media (min-width:600px) {
+    .container{
+        width: 80%;
+    }
+    .description__title h1{
+        font-size: 5.3rem;   
+    }
+    .icon__image{
+        display: flex;
+        padding-bottom: 36px;
+    }
+    .faq__description p{
+        width: 100%;
+    }
+    /* .icon__description{
+        margin-left: 30px;
+    } */
+ 
+
+}
+
+/* -----------------------786----------------- */
+@media (min-width:768px) {
+    .container{
+        width: 90%;
+    }
+    .services{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  
+    .description__title h1{
+        font-size:6rem;
+        line-height: 6rem;   
+    }
+    .faq__description{
+        display: flex;
+        
+    }
+    .faq__title h2{
+        font-size: 4.6rem;
+        line-height: 4.6rem;
+    }
+    .faq__description p{
+        font-size: 1.4rem;
+        line-height:1.5;
+        width: 80%;
+        
+    }
+    .faq__btn{
+        width: 40%;
+        text-align: right;
+        margin-bottom: 15px;
+    }
+    .options__icon{
+        display: flex;
+        flex-direction: row;
+        padding: 50px 40px 25px;
+        box-shadow: 0px 10px 30px rgba(55,43,125,.1);
+        border-radius: 25px;
+        justify-content: center;
+    }
+    .options{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .options__wrapper{
+        width: 50%;
+    }
+    .icon__image{
+        width: 40%;
+        height:100%;
+
+    }
+    .icon__description h4{
+        font-size: 2rem;
+        font-weight: 700;
+
+    }
+    .icon__description{
+        margin-left: 40px;
+    }
+    .icon__image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .icon__description{
+        padding: none;
+        margin-left:20px;
+        margin-bottom: 10px;
+        max-width: 68%;
+       
+    }
+    .icon__description p{
+        font-size: 1.4rem;
+        line-height: 1.8;
+        
+    }
+}
+
+
+
+/* ----------------900--------------------------- */
+@media (min-width: 900px) {
+    .container{
+        width: 80%;
+    }
+    .services__description{
+        padding-right: 38px;
+    }
+    .faq__description{
+        display: flex;
+        flex-direction: row;
+    }
+    .faq__title h2{
+        font-size: 4.6rem;
+    }
+    .faq__description p{
+        line-height: 2;
+        width: 100%;
+    }
+    .faq__btn{
+        width: 50%;
+    }
+    .options__icon{
+        display: flex;
+        flex-direction: row;
+        padding: 50px 40px 25px;
+        box-shadow: 0px 10px 30px rgba(55,43,125,.1);
+        border-radius: 25px;
+        justify-content: center;
+    }
+    .options{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .options__wrapper{
+        width: 50%;
+    }
+    .icon__image{
+        width: 24%;
+        height:100%;
+
+    }
+    .icon__description h4{
+        font-size: 2rem;
+
+    }
+    .icon__image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .icon__description h4{
+     padding-right: 10px;
+       
+    }
+    .icon__description p{
+        font-size: 1.4rem;
+        line-height: 2;
+    }
+    
+} 
+
+
+/* -----------------------------------1000------------------------- */
+@media (min-width:1000px) {
+    .container{
+        width: 90%;
+    }
+    .services__description{
+        padding-right: 36px;
+    }
+    .description__title h1{
+        font-size: 7rem;
+        line-height:7rem;  
+    }
+    .faq__title h2{
+        font-size: 5.4rem;
+    }
+    .faq__description p{
+        line-height: 2;
+        font-size: 1.6rem;
+
+    }
+    .faq__btn{
+        max-width: 30%;
+    }
+    .icon__image{
+        width: 20%;
+        height:100%;
+
+    }
+    .icon__description{
+        width: 68%;
+        margin-left: 40px;
+        
+    }
+    .icon__description h4{
+        font-size: 2.4rem;
+        padding: 0;
+    }
+    .icon__description p{
+        font-size: 1.6rem;
+        line-height: 1.8;
+        
+    }
 }
