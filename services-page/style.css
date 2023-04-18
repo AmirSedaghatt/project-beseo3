@@ -1,0 +1,131 @@
+@font-face {
+    font-family:"archivo";
+    src: url("./fonts/archivo/Archivo-VariableFont_wdth\,wght.ttf");
+}
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 62.5%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    font-family: "archivo",sans-serif;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Root Variables */
+:root {
+    --color-body: rgb(34, 34, 40);
+    --color-headings: rgb(71, 50, 136);
+    --color-navbar: rgba(140, 130, 115, 0.03);
+    --color-navbar-bg: rgb(30, 32, 33);
+    --color-navbar-items: rgb(121, 100, 239);
+    --color-menu-toggle: rgb(252, 176, 37);
+    --color-label-bg: rgba(252, 168, 15, 0.13);
+    --color-label: rgb(252, 168, 15);
+    --color-card-data: rgb(55, 43, 125);
+    --card-box-shadow: rgba(44, 34, 100, 0.2) 0px 10px 30px;
+    --color-btn: rgb(123, 102, 239);
+    --color-light-btn: rgb(197, 196, 252);
+    --color-btn-hover: rgba(255, 0, 0, 0.05);
+    --color-white: #fff;
+    --color-black: #000;
+    --color-badge:#FCF3DE;
+}
+
+/*------------------> services section <--------------------*/
+
+
+.services-section{
+    background-image:url(../assets/images/backgrounds/seo3-sectionbg8.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-top: 120px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+.services{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services__description{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-right:20px ;
+   
+}
+
+.description__title h1{
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height:4.2rem;
+    color: var(--color-headings);
+    margin-bottom: 15px;
+    margin-top: 32px;
+}
+.description__badge p{
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight:700;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    background-color: var(--color-badge);
+    color:var(--color-label);
+    border-radius: 15px;
+}
+
+.services__image{
+    width: 100%;
+    height:auto;
+
+
+}
+.services__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
