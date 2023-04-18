@@ -104,7 +104,7 @@ body {
   }
   
   .border {
-    border-left: 2px solid #fca80f;
+    border-left: 2px solid var(--color-label);
   }
   
   .item_number {
@@ -112,9 +112,9 @@ body {
     grid-column: 1/2;
   }
   .item_number--text {
-    color: #444;
+    color: var(--color-navbar) ;
     text-align: center;
-    color: #444;
+    color: var(--color-navbar);
     font-size: 1.3rem;
     font-weight: bold;
   }
@@ -138,7 +138,7 @@ body {
   }
   
   .carousel_box--item.border :is(.item_question, .item_number--text) {
-    color: #fca80f;
+    color: var(--color-label);
   }
   
   .item_icon {
@@ -159,7 +159,8 @@ body {
   .tips_box {
     padding: 40px;
     width: 100%;
-    background-color: #372b7d;
+    /* background-color: #372b7d; */
+    background-color: var(--color-card-data);
     border-radius: 25px;
     display: flex;
     align-items: center;
@@ -224,13 +225,14 @@ body {
   }
   .ourWork_title--text {
     width: 100%;
-    color: #372b7d;
+    /* color: #372b7d; */
+    color: var(--color-card-data);
     font-size: 3.2rem;
     font-weight: 700;
     text-align: left;
   }
   .ourWork_subtitle--text {
-    color: #444;
+    color: var(--color-navbar);
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 2rem;
@@ -250,7 +252,7 @@ body {
     gap: 20px;
   }
   .ourWork .item_title--text {
-    color: #473288;
+    color: var(--color-headings);
   }
   .ourWork_about {
     width: 128px;
@@ -265,13 +267,13 @@ body {
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: #7b66ef;
+    background-color: var(--color-btn);
     text-decoration: none;
     color: white;
   }
   
   .ourWork_about--btn:hover{
-  background-color: #7b66efea;
+  background-color: var(--color-light-btn);
   }
   
   .ourWork_bg--image {
