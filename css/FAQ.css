@@ -1,9 +1,8 @@
 @import "./main.css";
 @font-face {
-    font-family: Archivo;
+    font-family: "Archivo";
     src: url(../assets/fonts/archivo/Archivo-VariableFont_wdth\,wght.ttf);
 }
-
 
 *,
 *::after,
@@ -11,7 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Archivo;
+  font-family: "Archivo" , sans-serif;
 }
 
 body {
@@ -82,3 +81,111 @@ body {
 }
 
 /* ------------------------  FAQ ENDS  ------------------------ */
+
+/* ------------------------  CAROUSEL STARTS  ------------------------ */
+
+
+
+.carousel {
+    padding: 100px 0;
+    background: url(../images/carousel-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .carousel_box--item {
+    display: grid;
+    grid-auto-rows: 2;
+    grid-auto-columns: 28px 7fr 1fr;
+    column-gap: 16px;
+    row-gap: 32px;
+    padding: 20px;
+    border-left: 1px solid rgba(191, 191, 191);
+    transition: border-color 2s ease;
+  }
+  
+  .border {
+    border-left: 2px solid #fca80f;
+  }
+  
+  .item_number {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .item_number--text {
+    color: #444;
+    text-align: center;
+    color: #444;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .item_question {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2rem;
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  .item_answer {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 2rem;
+    grid-row: 2/3;
+    grid-column: 2/4;
+    height: 0;
+    transition: height 1s ease;
+    overflow: hidden;
+  }
+  
+  .carousel_box--item.border :is(.item_question, .item_number--text) {
+    color: #fca80f;
+  }
+  
+  .item_icon {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    text-align: right;
+  }
+  
+  .tips {
+    padding-top: 90px;
+  }
+  .tips_wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tips_box {
+    padding: 40px;
+    width: 100%;
+    background-color: #372b7d;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 40px;
+    box-shadow: 0px 10px 30px rgba(55, 43, 125, 0.2);
+  }
+  .box_tips--item {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .item_title--text {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  .item_subtitle--text {
+    color: #e1e1ff;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+  
+  /* ------------------------  CAROUSEL ENDS  ------------------------ */
