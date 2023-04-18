@@ -1,0 +1,84 @@
+@import "./main.css";
+@font-face {
+    font-family: Archivo;
+    src: url(../assets/fonts/archivo/Archivo-VariableFont_wdth\,wght.ttf);
+}
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Archivo;
+}
+
+body {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ------------------------  FAQ STARTS  ------------------------ */
+
+.faq {
+  padding-top: 120px;
+  background: url(../images/seo3-sectionbg8.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.faq_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.faq_details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.faq_badge,
+.ourWork_badge {
+  /* color: #fca80f; */
+  color: var(--color-label);
+  /* background-color: rgba(252, 168, 15, 0.13); */
+  background-color: var(--color-label-bg);
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  align-self: flex-start;
+  padding: 5px 15px;
+}
+.faq_title {
+  width: 100%;
+  align-self: flex-start;
+}
+
+.faq_title--text {
+  /* color: #473288; */
+  color: var(--color-headings);
+  font-size: 4.2rem;
+  font-weight: 700;
+  width: 70%;
+}
+
+.faq_bg--image {
+  width: 780px;
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+/* ------------------------  FAQ ENDS  ------------------------ */
