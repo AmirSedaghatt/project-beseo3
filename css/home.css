@@ -37,7 +37,7 @@ html {
     flex-direction: column;
 }
 
-/* Section-one Image style */
+/* Section1 background image */
 .sec1-img {
     width: 100%;
     background-image: url(/assets/images/home/seo3-sec1-img.png);
@@ -149,6 +149,7 @@ html {
 }
 
 /* ------------------------- section2, features here --------------------------- */
+/* section2 background image */
 .sec2-img {
     width: 100%;
     height: 100%;
@@ -159,6 +160,7 @@ html {
     background-position: 50% 50%;
 }
 
+/* section2 features */
 .features {
     display: flex;
     flex-direction: column;
@@ -169,6 +171,7 @@ html {
     padding-bottom: 40px;
 }
 
+/* feature label */
 .feat__label {
     display: inline-block;
     margin-bottom: 30px;
@@ -186,6 +189,7 @@ html {
     background-color: var(--color-label-bg);
 }
 
+/* feature title */
 .feat__title {
     width: auto;
     height: auto;
@@ -199,10 +203,12 @@ html {
     color: var(--color-headings);
 }
 
+/* makes texts responsive */
 .txt-wrapper {
     width: 80%;
 }
 
+/* feature description */
 .feat__desc {
     width: auto;
     height: auto;
@@ -216,6 +222,7 @@ html {
     color: var(--color-body);
 }
 
+/* core features named items */
 .feat__items {
     display: flex;
     flex-direction: column;
@@ -223,6 +230,7 @@ html {
     align-items: center;
 }
 
+/* a general class for three features named items */
 .item {
     display: flex;
     flex-direction: column;
@@ -230,16 +238,19 @@ html {
     align-items: center;
 }
 
+/* feature image */
 .item__img {
     margin: 20px 0;
 }
 
+/* feature image styles */
 .img--wrapper {
     max-width: 100%;
     width: 150px;
     height: 150px;
 }
 
+/* feature's title */
 .item__title {
     width: auto;
     height: auto;
@@ -253,6 +264,7 @@ html {
     color: var(--color-headings);
 }
 
+/* feature's description */
 .item__desc {
     margin-bottom: 15px;
     font-family: 'Archivo';
@@ -265,7 +277,7 @@ html {
 }
 
 /* Media Queries Here */
-@media (min-width: 360px) and (max-width: 480px) {
+@media (min-width: 360px) {
     .masthead__label {
         padding: 0px 4px;
         font-size: 0.4rem;
@@ -289,7 +301,7 @@ html {
     }
 }
 
-@media (min-width: 480px) and (max-width: 600px) { 
+@media (min-width: 480px) { 
     .space-around {
         padding: 6px 0;
     }
@@ -317,7 +329,7 @@ html {
     }
 }
 
-@media (min-width: 600px) and (max-width: 768px) {
+@media (min-width: 600px) {
     .space-around {
         padding: 8px 0;
     }
@@ -345,7 +357,7 @@ html {
     }
 }
 
-@media (min-width: 768px) and (max-width: 900px) {
+@media (min-width: 768px) {
     .space-around {
         padding: 10px 0;
     }
@@ -373,7 +385,7 @@ html {
     }
 }
 
-@media (min-width: 900px) and (max-width: 1024px) {
+@media (min-width: 900px) {
     .space-around {
         padding: 12px 0;
     }
@@ -401,7 +413,7 @@ html {
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
     .space-around {
         padding: 14px 0;
     }
