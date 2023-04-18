@@ -189,3 +189,95 @@ body {
   }
   
   /* ------------------------  CAROUSEL ENDS  ------------------------ */
+
+
+  /* ------------------------  OUR WORK STARTS  ------------------------ */
+
+
+
+.ourWork {
+    padding-top: 100px;
+    background: url(../images/seo3-sectionbg4.png);
+    background-position: center;
+  }
+  .ourWork_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .ourWork_details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .ourWork_badge {
+    padding: 5px 15px;
+  }
+  .ourWork_title {
+    width: 100%;
+  }
+  .ourWork_title--text {
+    width: 100%;
+    color: #372b7d;
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: left;
+  }
+  .ourWork_subtitle--text {
+    color: #444;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+  .ourWork_specification {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .ourWork_specification--item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .ourWork .item_title--text {
+    color: #473288;
+  }
+  .ourWork_about {
+    width: 128px;
+    height: 44px;
+    align-self: flex-start;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  .ourWork_about--btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #7b66ef;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .ourWork_about--btn:hover{
+  background-color: #7b66efea;
+  }
+  
+  .ourWork_bg--image {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  
+  /* ------------------------  OUR WORK ENDS  ------------------------ */
