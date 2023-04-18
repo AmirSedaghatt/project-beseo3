@@ -31,7 +31,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    font-family: "archivo",sans-serif;
 }
 html{
     font-size: 62.5%;
@@ -50,6 +49,14 @@ q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Archivo" , sans-serif;
 }
 
 /* Root Variables */
@@ -114,7 +121,7 @@ table {
     font-size: 1.3rem;
     font-weight:700;
     text-transform: uppercase;
-    padding: 10px 15px;
+    padding: 8px 16px;
     margin-bottom: 15px;
     background-color: var(--color-badge);
     color:var(--color-label);
@@ -232,6 +239,7 @@ table {
     padding-top: 100px;
     background: url(../assets/images/backgrounds/seo3-bg4.png);
     background-position: center;
+    padding-top: 150px;
   }
   .ourWork_wrapper {
     display: flex;
@@ -248,10 +256,22 @@ table {
     flex-direction: column;
     gap: 25px;
   }
+.ourWork_badge {
+  /* color: #fca80f; */
+  color: var(--color-label);
+  /* background-color: rgba(252, 168, 15, 0.13); */
+  background-color: var(--color-label-bg);
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  align-self: flex-start;
+  padding: 8px 16px;
+}
   
-  .ourWork_badge {
+  /* .ourWork_badge {
     padding: 5px 15px;
-  }
+  } */
   .ourWork_title {
     width: 100%;
   }
@@ -379,6 +399,15 @@ table {
     .icon__description h4{
         font-size: 1.8rem;
     }
+    .ourWork_title--text {
+        font-size: 4.1rem;
+        width: 80%;
+      }
+      .ourWork_subtitle--text{
+        font-size: 1.4rem;
+        width: 95%;
+        line-height: 1.6;
+      }
 }
 
 /* ---------------->600<------------- */
@@ -398,9 +427,21 @@ table {
     .faq__description p{
         width: 100%;
     }
-    /* .icon__description{
-        margin-left: 30px;
-    } */
+    .ourWork_title--text {
+        font-size: 4.1rem;
+        width: 90%;
+      }
+    .ourWork_subtitle--text{
+        font-size: 1.4rem;
+        width: 90%;
+        line-height: 1.6;
+      }
+    
+      .item_title .item_title--text{
+        font-size:1.4rem;
+        width: 100%;
+      }
+   
  
 
 }
@@ -483,6 +524,20 @@ table {
         line-height: 1.8;
         
     }
+    .ourWork_wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+      .ourWork_subtitle--text{
+        font-size: 1.4rem;
+        width: 84%;
+        line-height: 1.6;
+      }
+    
+      .item_title .item_title--text{
+        font-size:1.6rem;
+        
+      }
 }
 
 
@@ -546,6 +601,26 @@ table {
         font-size: 1.4rem;
         line-height: 2;
     }
+    .ourWork_badge {
+      padding: 8px 20px;
+      font-size: 1.4rem;
+    }
+    .ourWork_title--text {
+        font-size: 4.6rem;
+      }
+      .ourWork_subtitle--text{
+        font-size: 1.4rem;
+        width: 80%;
+        line-height: 1.6;
+      }
+    
+      .item_title .item_title--text{
+        font-size:1.6rem;
+        width: 100%;
+      }
+      .ourWork_about--btn{
+        font-size: 1.4rem;
+      }
     
 } 
 
@@ -592,6 +667,23 @@ table {
         line-height: 1.8;
         
     }
+    .ourWork_title--text {
+        font-size: 5.4rem;
+        width: 80%;
+      }
+      .ourWork_subtitle--text{
+        font-size: 1.6rem;
+        width: 80%;
+        line-height: 1.6;
+      }
+      .item_title .item_title--text{
+        font-size:1.8rem;
+        width: 100%;
+      }
+      .ourWork_about--btn{
+        font-size: 1.6rem;
+      }
+
 }
 
   
