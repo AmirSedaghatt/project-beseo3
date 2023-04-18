@@ -172,3 +172,51 @@ table {
 .faq__btn a:hover{
     opacity: 1;
 }
+
+/*-------------> Options section<--------------- */
+
+.options-section{
+    padding-top: 60px;  
+    background-image: url(../assets/images/backgrounds/seo3-bg3.png); 
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+}
+.options__wrapper{
+    width: 100%;
+    padding: 10px 0; 
+}
+
+.options__icon{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 40px 25px;
+    box-shadow:var(--card-box-shadow);
+    border-radius: 25px;
+    background-color: #fff;
+}
+.icon__image{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+.icon__description{
+    margin-left: 16px;
+}
+.icon__description h4{
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: var(--color-headings);
+    font-weight: 700;
+}
+
+.icon__description p{
+    font-size: 1.3rem;
+    line-height: 1.9;
+    margin-bottom: 15px;
+
+}
