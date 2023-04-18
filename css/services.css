@@ -255,11 +255,10 @@ table {
     justify-content: center;
     flex-direction: column;
     gap: 25px;
+    
   }
 .ourWork_badge {
-  /* color: #fca80f; */
   color: var(--color-label);
-  /* background-color: rgba(252, 168, 15, 0.13); */
   background-color: var(--color-label-bg);
   border-radius: 15px;
   text-align: center;
@@ -269,9 +268,7 @@ table {
   padding: 8px 16px;
 }
   
-  /* .ourWork_badge {
-    padding: 5px 15px;
-  } */
+
   .ourWork_title {
     width: 100%;
   }
@@ -283,7 +280,6 @@ table {
     text-align: left;
   }
   .ourWork_subtitle--text {
-    /* color: var(--color-navbar); */
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 2rem;
@@ -328,12 +324,16 @@ table {
     text-decoration: none;
     color: white;
     font-size: 1.3rem;
+    opacity: 0.9;
+    transition: .3s ;
   }
   
   .ourWork_about--btn:hover{
-  background-color: var(--color-light-btn);
+    opacity: 1;
   }
-  
+  .ourWork_bg{
+    width: 100%;
+  }
   .ourWork_bg--image {
     width: 100%;
     object-fit: cover;
@@ -528,9 +528,18 @@ table {
         flex-direction: row;
         align-items: flex-start;
       }
+      .ourWork_details {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 25px;
+        width: 90%;
+        
+      }
       .ourWork_subtitle--text{
         font-size: 1.4rem;
-        width: 84%;
+        width: 95%;
         line-height: 1.6;
       }
     
@@ -610,12 +619,11 @@ table {
       }
       .ourWork_subtitle--text{
         font-size: 1.4rem;
-        width: 80%;
         line-height: 1.6;
       }
     
       .item_title .item_title--text{
-        font-size:1.6rem;
+        font-size:1.5rem;
         width: 100%;
       }
       .ourWork_about--btn{
@@ -669,11 +677,10 @@ table {
     }
     .ourWork_title--text {
         font-size: 5.4rem;
-        width: 80%;
+        width: 90%;
       }
       .ourWork_subtitle--text{
         font-size: 1.6rem;
-        width: 80%;
         line-height: 1.6;
       }
       .item_title .item_title--text{
