@@ -1,7 +1,7 @@
 /* imports */
 @import "/css/main.css";
 @font-face {
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Archivo';
     src: url(/assets/fonts/archivo/Archivo-VariableFont_wdth\,wght.ttf);
 }
 
@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Archivo';
+    font-family: 'Archivo', sans-serif;
 }
 
 html {
@@ -146,6 +146,122 @@ html {
 /* Change link opacity on hover */
 .masthead__links a:hover {
     opacity: 1;
+}
+
+/* ------------------------- section2, features here --------------------------- */
+.sec2-img {
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/images/backgrounds/seo3-bg1.png);
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+.feat__label {
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 2px 15px;
+    font-family: 'Archivo';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-decoration: none;
+    border-style: none;
+    border-radius: 15px;
+    border-color: rgba(255, 0, 0, 0);
+    color: var(--color-label);
+    background-color: var(--color-label-bg);
+}
+
+.feat__title {
+    width: auto;
+    height: auto;
+    margin-bottom: 30px;
+    font-family: 'Archivo';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-decoration: none;
+    color: var(--color-headings);
+}
+
+.txt-wrapper {
+    width: 80%;
+}
+
+.feat__desc {
+    width: auto;
+    height: auto;
+    margin-bottom: 30px;
+    font-family: 'Archivo';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-decoration: none;
+    color: var(--color-body);
+}
+
+.feat__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item__img {
+    margin: 20px 0;
+}
+
+.img--wrapper {
+    max-width: 100%;
+    width: 150px;
+    height: 150px;
+}
+
+.item__title {
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+    font-family: 'Archivo';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-decoration: none;
+    color: var(--color-headings);
+}
+
+.item__desc {
+    margin-bottom: 15px;
+    font-family: 'Archivo';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-decoration: none;
+    color: var(--color-body);
 }
 
 /* Media Queries Here */
