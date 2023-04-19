@@ -74,8 +74,8 @@ html {
     border-style: none;
     border-radius: 15px;
     border-color: rgba(255, 0, 0, 0);
-    color: var(--color-label);
-    background-color: var(--color-label-bg);
+    color: var(--color-body-caption);
+    background-color: var(--color-body-caption-bg);
 }
 
 /* Masthead main text style */
@@ -184,8 +184,8 @@ html {
     border-style: none;
     border-radius: 15px;
     border-color: rgba(255, 0, 0, 0);
-    color: var(--color-label);
-    background-color: var(--color-label-bg);
+    color: var(--color-body-caption);
+    background-color: var(--color-body-caption-bg);
 }
 
 /* makes feature title responsive */
