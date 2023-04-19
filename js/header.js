@@ -25,7 +25,7 @@ function scrollFunction() {
   
     document.getElementById("nav_logo--img").style.width ="50%";
     document.getElementById("nav").style.backgroundColor="rgba(255,255,255,.9)";
-    document.querySelector(".nav_logo").style.padding ="0"
+    document.querySelector(".nav_logo").style.padding ="10px 0"
 
 
 
