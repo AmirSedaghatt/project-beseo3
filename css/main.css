@@ -1,6 +1,7 @@
 /* Reset */
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -30,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    
 }
 ol, ul {
     list-style: none;
