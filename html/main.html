@@ -5,9 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/home.css">
+    <script src="../js/header.js" defer></script>
+    <script src="../js/footer.js" defer> </script>
     <title>BeSeo3</title>
 </head>
 <body>
+    <!-- ------------ header ----------------- -->
+    <nav id="nav" class="nav" >
+        <div class="nav_container" >
+            <div class="nav_wrapper">
+                <div class="nav_left" >
+                    <div id="nav_log" class="nav_logo" >
+                        <a href="#">
+                            <img id="nav_logo--img" class="nav_logo--img"  src="../assets/images/header/seo31.png" alt="seo31" >
+                        </a>
+                    </div>
+                </div>
+                <div class="nav_right">
+                    <div class="nav_menu">
+                        <ul class="nav_menu--list">
+                            <li class="menu_list--item"><a href="#" class="menu_list--link">Home</a></li>
+                            <li class="menu_list--item"><a href="#" class="menu_list--link">About us</a></li>
+                            <li class="menu_list--item"><a href="#" class="menu_list--link">Services</a></li>
+                            <li class="menu_list--item"><a href="#" class="menu_list--link">FAQ</a></li>
+                            <li class="menu_list--item"><a href="#" class="menu_list--link">Contact us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="nav_hamburger">
+                        <img src="../assets/images/header/hamburger.svg" alt="" class="nav_hamburger--img">
+                    </div>
+                    <div class="nav_button">
+                        <a href="" class="nav_button--btn">
+                            <p class="btn_text">Buy now</p>
+                            <img src="../assets/images/header/arrow-right.svg" alt="" class="btn_icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav_mobile--menu">
+            <div class="mobile_nav--wrapper">
+                <div class="mobile_menu--close">
+                    <img src="../assets/images/header/close.svg" alt="" class="menu_close--btn">
+                </div>
+                <div class="nav_mobile--button">
+                    <a href="" class="mobile_button--btn">
+                        <p class="mobile_btn--text">Buy now</p>
+                        <img src="../assets/images/header/arrow-right.svg" alt="" class="mobile_btn--icon">
+                    </a>
+                </div>
+                <ul class="nav_mobile--list">
+                    <li class="mobile_list--item"><a href="#" class="mobile_list--link">Home</a></li>
+                    <li class="mobile_list--item"><a href="#" class="mobile_list--link">About us</a></li>
+                    <li class="mobile_list--item"><a href="#" class="mobile_list--link">Services</a></li>
+                    <li class="mobile_list--item"><a href="#" class="mobile_list--link">FAQ</a></li>
+                    <li class="mobile_list--item"><a href="#" class="mobile_list--link">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- --------------- welcome to beseo section ----------- -->
     <section class="container sec1-img">
         <div class="content-container">
             <div class="masthead">
@@ -29,12 +87,14 @@
                     felis.
                 </p>
                 <div class="masthead__links space-around">
-                    <a class="link" href="#">Read more</a>
-                    <a class="link link--secondary" href="#">Contact us</a>
+                    <a class="link" href="/html/about-us.html">Read more</a>
+                    <a class="link link--secondary" href="/html/contact-us.html">Contact us</a>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- ---------------------- our features section --------------------- -->
     <section class="container sec2-img">
         <div class="content-container">
             <div class="features">
@@ -94,5 +154,364 @@
             </div> 
         </div>
     </section>
+
+    <!-- ------------------- about us data card section -------------------- -->
+    <section class="container align--content">
+        <div class="content-container">
+            <div class="data-card">
+                <div class="data-chart">
+                    <div class="data-align">
+                        <div class="data">
+                            <div class="num-wrapper">
+                                <span class="data__num">850</span>
+                            </div>
+                            <h3 class="data__text">Fusce interdum</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-chart">
+                    <div class="data-align">
+                        <div class="data">
+                            <div class="num-wrapper">
+                                <span class="data__num">20</span>
+                            </div>
+                            <h3 class="data__text">Sed auctor</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-chart">
+                    <div class="data-align">
+                        <div class="data">
+                            <div class="num-wrapper">
+                                <span class="data__num">29</span>
+                            </div>
+                            <h3 class="data__text">Maecenas non</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-chart">
+                    <div class="data-align">
+                        <div class="data">
+                            <div class="num-wrapper">
+                                <span class="data__num">1k</span>
+                            </div>
+                            <h3 class="data__text">Aliquam erat</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------ services section ---------------------- -->
+    <section class="container">
+        <div class="content-container">
+            <div class="options">
+                <div class="options__wrapper">
+                    <div class="options__icon">
+                        <div class="icon__image">
+                            <img src="../assets/images/services/seo3-services-icon1.png" alt="">
+                        </div>
+                        <div class="icon__description">
+                            <h4>Design & Layout</h4>
+                            <p>
+                                Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin risus erat, fringilla vel purus sit amet, mattis porta enim.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="options__wrapper">
+                    <div class="options__icon">
+                        <div class="icon__image">
+                            <img src="../assets/images/services/seo3-services-icon2.png" alt="">
+                        </div>
+                        <div class="icon__description">
+                            <h4>Digital Marketing</h4>
+                            <p>
+                                Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin risus erat, fringilla vel purus sit amet, mattis porta enim.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="options__wrapper">
+                    <div class="options__icon">
+                        <div class="icon__image">
+                            <img src="../assets/images/services/seo3-services-icon3.png" alt="">
+                        </div>
+                        <div class="icon__description">
+                            <h4>Google Ads</h4>
+                            <p>
+                                Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin risus erat, fringilla vel purus sit amet, mattis porta enim.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="options__wrapper">
+                    <div class="options__icon">
+                        <div class="icon__image">
+                            <img src="../assets/images/services/seo3-services-icon4.png" alt="">
+                        </div>
+                        <div class="icon__description">
+                            <h4>Social Media Marketing</h4>
+                            <p>
+                                Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin risus erat, fringilla vel purus sit amet, mattis porta enim.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="options__wrapper">
+                    <div class="options__icon">
+                        <div class="icon__image">
+                            <img src="../assets/images/services/seo3-services-icon5.png" alt="">
+                        </div>
+                        <div class="icon__description">
+                            <h4>Marketing Analysis</h4>
+                            <p>
+                                Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin risus erat, fringilla vel purus sit amet, mattis porta enim.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="options__wrapper">
+                    <div class="options__icon">
+                        <div class="icon__image">
+                            <img src="../assets/images/services/seo3-services-icon6.png" alt="">
+                        </div>
+                        <div class="icon__description">
+                            <h4>Content Marketing</h4>
+                            <p>
+                                Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin risus erat, fringilla vel purus sit amet, mattis porta enim.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="options__wrapper">
+                    <div class="options__icon">
+                        <div class="icon__image">
+                            <img src="../assets/images/services/seo3-services-icon7.png" alt="">
+                        </div>
+                        <div class="icon__description">
+                            <h4>Sales optimization</h4>
+                            <p>
+                                Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin risus erat, fringilla vel purus sit amet, mattis porta enim.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="options__wrapper">
+                    <div class="options__icon">
+                        <div class="icon__image">
+                            <img src="../assets/images/services/seo3-services-icon8.png" alt="">
+                        </div>
+                        <div class="icon__description">
+                            <h4>Friendly URL</h4>
+                            <p>
+                                Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin risus erat, fringilla vel purus sit amet, mattis porta enim.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                   <div class="options__wrapper">
+                    <div class="options__icon">
+                        <div class="icon__image">
+                            <img src="../assets/images/services/seo3-services-icon9.png" alt="">
+                        </div>
+                        <div class="icon__description">
+                            <h4>Startups</h4>
+                            <p>
+                                Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin risus erat, fringilla vel purus sit amet, mattis porta enim.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="options__wrapper">
+                    <div class="options__icon">
+                        <div class="icon__image">
+                            <img src="../assets/images/services/seo3-services-icon10.png" alt="">
+                        </div>
+                        <div class="icon__description">
+                            <h4>Wireframes</h4>
+                            <p>
+                                Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin risus erat, fringilla vel purus sit amet, mattis porta enim.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="more-services">
+                    <a class="services__btn" href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------ our work section ---------------------- -->
+    <section class="container ourWork">
+        <div class="content-container">
+            <div class="ourWork_wrapper">
+                <div class="ourWork_details">
+                    <div class="ourWork_badge">
+                        <p class="ourWork_badge--text">OUR WORK</p>
+                    </div>
+                    <div class="ourWork_title">
+                        <p class="ourWork_title--text">Why customers love us?</p>
+                    </div>
+                    <div class="ourWork_subtitle">
+                        <p class="ourWork_subtitle--text">Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit
+                            amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie
+                            ante.</p>
+                    </div>
+                    <div class="ourWork_specification">
+                        <div class="ourWork_specification--item">
+                            <div class="item_icon">
+                                <img src="../assets/images/our-work/seo3-work-icon1.png" class="item_icon--image" />
+                            </div>
+                            <div class="item_title">
+                                <p class="item_title--text">Vivamus in diam turpis</p>
+                            </div>
+                        </div>
+                        <div class="ourWork_specification--item">
+                            <div class="item_icon">
+                                <img src="../assets/images/our-work/seo3-work-icon2.png" class="item_icon--image" />
+                            </div>
+                            <div class="item_title">
+                                <p class="item_title--text bottom">Curabitur ut egestas justo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ourWork_about">
+                        <a href="#" class="ourWork_about--btn">About us</a>
+                    </div>
+                </div>
+                <div class="ourWork_bg">
+                    <img src="../assets/images/our-work/seo3-work-pic1.png" alt="" class="ourWork_bg--image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --------------------------- our clients section ----------------------- -->
+    <section class="container">
+        <div class="content-container">
+            <div class="our-clients">
+                <div class="client__wrapper">
+                    <div class="client__caption">
+                        <h2 class="caption__text">Our clients</h2>
+                    </div>
+                    <div class="white-space"></div>
+                    <div class="logo">
+                        <div class="logo__wrapper">
+                            <div class="logo__frame">
+                                <div class="logo__size">
+                                    <img class="logo__img logo__img--scale" src="/assets/images/about-us/seo3-about-client1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="logo__wrapper">
+                            <div class="logo__frame">
+                                <div class="logo__size">
+                                    <img class="logo__img logo__img--scale" src="/assets/images/about-us/seo3-about-client2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="logo__wrapper">
+                            <div class="logo__frame">
+                                <div class="logo__size">
+                                    <img class="logo__img logo__img--scale" src="/assets/images/about-us/seo3-about-client3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="logo__wrapper">
+                            <div class="logo__frame">
+                                <div class="logo__size">
+                                    <img class="logo__img logo__img--scale" src="/assets/images/about-us/seo3-about-client4.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="logo__wrapper">
+                            <div class="logo__frame">
+                                <div class="logo__size">
+                                    <img class="logo__img logo__img--scale" src="/assets/images/about-us/seo3-about-client5.png" alt="">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------------- footer --------------------- -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="newsletter">
+                <div class="newsletter_badge--join">
+                    <p  class="badge_join--text">
+                        JOIN TO US
+                    </p>
+                </div>
+                <div class="footer_title">
+                    <p class="footer_title--text">Newsletter</p>
+                </div>
+                <div class="footer_input">
+                    <span class="alert">
+                        X
+                    </span>
+                    <input placeholder="Your e-mail" type="email" class="footer_input--box">
+                </div>
+                <div class="footer_sign">
+                    <p  class="footer_sign--btn">
+                        Sign up
+                    </p>
+                </div>
+                <div class="alert--error">
+                    <p >
+                        One or more fields have an error. Please check and try again.
+                    </p>
+                </div>
+            </div>
+            <div class="widgets">
+                <div class="address">
+                    <p class="address_text">Level 13, 2 Elizabeth St,
+                        Melbourne, Victoria 3000,
+                        Australia
+                    </p>
+                </div>
+                <div class="socials">
+                    <p class="worktime">Monday - Friday: 8am - 6pm</p>
+                    <div class="icons">
+                        <img src="../assets/images/footer/logo-twitter.svg" alt="" class="twitter">
+                        <img src="../assets/images/footer/facebook-fill.svg" alt="" class="facebook">
+                        <img src="../assets/images/footer/skype.svg" alt="" class="skype">
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="contact_phone">
+                        <img src="../assets/images/footer/baseline-phone-iphone.svg" alt="" class="contact_phone--icon">
+                        <p class="contact_phone--text">+61 (0) 383 766 284</p>
+                    </div>
+                    <div class="contact_mail">
+                        <img  src="../assets/images/footer/email-solid.svg" alt="" class="contact_mail--icon">
+                        <p class="contact_mail--text"> noreply@envato.com</p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="line">
+            
+        </div>
+        <div class="copyright">
+            <div class="footer-container">
+                <div class="copyright__wrapper">
+                    <div class="navigation">
+                        <img src="../assets/images/footer/outline-keyboard-arrow-up.svg" alt="" class="navigation_icon">
+                    </div>
+                    <div class="copyright_text">
+                        © 2021 Betheme by <a href="" class="copyright_link">Muffin group</a> | All Rights Reserved | Powered by
+                        <a href="" class="copyright_link">WordPess</a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </footer>
 </body>
 </html>
