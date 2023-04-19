@@ -48,7 +48,16 @@
 
 /* ...................................... start mobile-first ............................................................. */
 
-
+/* .body_color{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(102,102,102,.7);
+    
+  } */
 
 
 /* ................................... main container ........................................................... */
@@ -112,7 +121,7 @@
 
 }
 .nav_logo--img {
-  width: 75%;
+  width: 85%;
 }
 
 
@@ -138,7 +147,7 @@
 .menu_list--link {
   padding: 0 20px;
   font-size: 17px;
-  color: #222228;
+  color: var( --color-body);
   font-weight: 500;
 }
 
@@ -316,7 +325,7 @@
 
   /*.............................................................. first mediaqueri ...................................................................  */
 
-@media (min-width: 766px) {
+@media (min-width: 767px) {
   .nav_button {
     display: block;
     
@@ -362,9 +371,9 @@
     width: 95%;
   }
 
-  .nav_logo{
+  /* .nav_logo{
     padding: 20px 0;
-  }
+  } */
 
 
   .nav_logo--img {
