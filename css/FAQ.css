@@ -1,0 +1,286 @@
+@import "./main.css";
+@font-face {
+    font-family: "Archivo";
+    src: url(../assets/fonts/archivo/Archivo-VariableFont_wdth\,wght.ttf);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Archivo" , sans-serif;
+}
+
+body {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ------------------------  FAQ STARTS  ------------------------ */
+
+.faq {
+  padding-top: 120px;
+  background: url(../images/seo3-sectionbg8.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.faq_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.faq_details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.faq_badge,
+.ourWork_badge {
+  /* color: #fca80f; */
+  color: var(--color-body-caption);
+  /* background-color: rgba(252, 168, 15, 0.13); */
+  background-color: var(--color-body-caption-bg);
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  align-self: flex-start;
+  padding: 5px 15px;
+}
+.faq_title {
+  width: 100%;
+  align-self: flex-start;
+}
+
+.faq_title--text {
+  /* color: #473288; */
+  color: var(--color-headings);
+  font-size: 4.2rem;
+  font-weight: 700;
+  width: 70%;
+}
+
+.faq_bg--image {
+  width: 780px;
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+/* ------------------------  FAQ ENDS  ------------------------ */
+
+/* ------------------------  CAROUSEL STARTS  ------------------------ */
+
+
+
+.carousel {
+    padding: 100px 0;
+    background: url(../images/carousel-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .carousel_box--item {
+    display: grid;
+    grid-auto-rows: 2;
+    grid-auto-columns: 28px 7fr 1fr;
+    column-gap: 16px;
+    row-gap: 32px;
+    padding: 20px;
+    border-left: 1px solid rgba(191, 191, 191);
+    transition: border-color 2s ease;
+    cursor: pointer;
+  }
+  
+  .border {
+    border-left: 2px solid var(--color-body-caption);
+  }
+  
+  .item_number {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .item_number--text {
+    color: var(--color-navbar) ;
+    text-align: center;
+    color: var(--color-navbar);
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .item_question {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2rem;
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  .item_answer {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 2rem;
+    grid-row: 2/3;
+    grid-column: 2/4;
+    height: 0;
+    transition: height 1s ease;
+    overflow: hidden;
+  }
+  
+  .carousel_box--item.border :is(.item_question, .item_number--text) {
+    color: var(--color-body-caption);
+  }
+  
+  .item_icon {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    text-align: right;
+  }
+  
+  .tips {
+    padding-top: 90px;
+  }
+  .tips_wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tips_box {
+    padding: 40px;
+    width: 100%;
+    /* background-color: #372b7d; */
+    background-color: var(--color-card-data);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 40px;
+    box-shadow: 0px 10px 30px rgba(55, 43, 125, 0.2);
+  }
+  .box_tips--item {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .item_title--text {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  .item_subtitle--text {
+    color: #e1e1ff;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+  
+  /* ------------------------  CAROUSEL ENDS  ------------------------ */
+
+
+  /* ------------------------  OUR WORK STARTS  ------------------------ */
+
+
+
+.ourWork {
+    padding-top: 100px;
+    background: url(../images/seo3-sectionbg4.png);
+    background-position: center;
+  }
+  .ourWork_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .ourWork_details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .ourWork_badge {
+    padding: 5px 15px;
+  }
+  .ourWork_title {
+    width: 100%;
+  }
+  .ourWork_title--text {
+    width: 100%;
+    /* color: #372b7d; */
+    color: var(--color-card-data);
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: left;
+  }
+  .ourWork_subtitle--text {
+    color: var(--color-navbar);
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+  .ourWork_specification {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .ourWork_specification--item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .ourWork .item_title--text {
+    color: var(--color-headings);
+  }
+  .ourWork_about {
+    width: 128px;
+    height: 44px;
+    align-self: flex-start;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  .ourWork_about--btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-btn);
+    text-decoration: none;
+    color: white;
+  }
+  
+  .ourWork_about--btn:hover{
+  background-color: var(--color-light-btn);
+  }
+  
+  .ourWork_bg--image {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  
+  /* ------------------------  OUR WORK ENDS  ------------------------ */

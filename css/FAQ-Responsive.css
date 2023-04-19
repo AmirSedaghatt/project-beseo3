@@ -1,0 +1,187 @@
+@media (min-width: 480px) {
+    .container {
+      width: 85%;
+    }
+  
+    /* -----------------  FAQ STARTS  ----------------- */
+  
+    .faq_title--text {
+      font-size: 5.3rem;
+      width: 100%;
+    }
+  
+    /* -----------------  FAQ ENDS  ----------------- */
+  
+    /* -----------------  CAROUSEL STARTS  ----------------- */
+  
+    .tips_box {
+      max-width: 480px;
+    }
+  
+    .item_title--text {
+      font-size: 1.8rem;
+    }
+  
+    /* -----------------  CAROUSEL ENDS  ----------------- */
+  
+    /* -----------------  OUR WORK STARTS  ----------------- */
+  
+    .ourWork_title--text {
+      font-size: 4.1rem;
+      width: 80%;
+    }
+  
+    /* -----------------  OUR WORK ENDS  ----------------- */
+  }
+  
+  @media (min-width: 600px) {
+    .container {
+      width: 75%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  
+    /* -----------------  FAQ STARTS  ----------------- */
+  
+    .faq_wrapper {
+      flex-direction: row;
+    }
+  
+    .faq_title--text {
+      font-size: 6.0rem;
+    }
+  
+    /* -----------------  FAQ ENDS  ----------------- */
+  
+    /* -----------------  CAROUSEL STARTS  ----------------- */
+  
+    .tips_box {
+      flex-direction: row;
+      max-width: 100%;
+    }
+  
+    /* -----------------  CAROUSEL ENDS  ----------------- */
+  
+    /* -----------------  OUR WORK STARTS  ----------------- */
+  
+    .ourWork_wrapper {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    /* -----------------  OUR WORK ENDS  ----------------- */
+  }
+  
+  @media (min-width: 900px) {
+    .container {
+      width: 80%;
+    }
+  
+    /* -----------------  FAQ STARTS  ----------------- */
+  
+    .faq_badge {
+      padding: 8px 20px;
+      font-size: 1.4rem;
+    }
+  
+    /* -----------------  FAQ ENDS  ----------------- */
+  
+    /* -----------------  CAROUSEL STARTS  ----------------- */
+  
+    .item_number--text {
+      font-size: 1.4rem;
+    }
+    .item_question {
+      font-size: 1.4rem;
+    }
+    .item_answer {
+      font-size: 1.4rem;
+    }
+    .carousel .item_icon--image {
+      width: 20px;
+    }
+    .carousel_box--item {
+      padding: 25px;
+    }
+  
+    .item_title--text {
+      font-size: 2.0rem;
+    }
+  
+    .item_subtitle--text {
+      font-size: 1.4rem;
+    }
+  
+    /* -----------------  CAROUSEL ENDS  ----------------- */
+  
+    /* -----------------  OUR WORK STARTS  ----------------- */
+  
+    .ourWork_title--text {
+      font-size: 4.6rem;
+    }
+  
+    .ourWork_badge {
+      padding: 8px 20px;
+      font-size: 1.4rem;
+    }
+  
+    /* -----------------  OUR WORK ENDS  ----------------- */
+  }
+  
+  @media (min-width: 1000px) {
+    .container {
+      width: 95%;
+    }
+  
+    /* -----------------  FAQ STARTS  ----------------- */
+  
+    .faq_title--text {
+      font-size: 7.0rem;
+    }
+  
+    /* -----------------  FAQ ENDS  ----------------- */
+  
+  
+        /* -----------------  CAROUSEL STARTS  ----------------- */
+  
+    .item_number--text {
+      font-size: 1.6rem;
+    }
+    .item_question {
+      font-size: 1.6rem;
+    }
+    .item_answer {
+      font-size: 1.6rem;
+      line-height: 3rem;
+    }
+    .carousel .item_icon--image {
+      width: 20px;
+    }
+  
+    .item_title--text {
+      font-size: 1.8rem;
+    }
+  
+    .item_subtitle--text {
+      font-size: 1.6rem;
+      line-height: 3rem;
+    }
+  
+        /* -----------------  CAROUSEL ENDS  ----------------- */
+  
+  
+        /* -----------------  OUR WORK STARTS  ----------------- */
+  
+    .ourWork_title--text {
+      font-size: 5.4rem;
+      width: 80%;
+    }
+  
+        /* -----------------  OUR WORK ENDS  ----------------- */
+    
+  }
+  
