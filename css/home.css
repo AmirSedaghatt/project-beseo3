@@ -270,6 +270,65 @@ html {
     color: var(--color-body);
 }
 
+/* --------------- section4, data card here ------------------- */
+/* card container */
+.data-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-card-data);
+    box-shadow: var(--color-card-box-shadow);
+    border-radius: 25px;
+    padding: 40px 40px 0;
+}
+
+/* wraps number and text in itself */
+.data-chart {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* places data div in the center of data-chart div */
+.data-align {
+    width: 100%;
+    text-align: center;
+}
+
+/* contains number and text in itself */
+.data {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* wraps number div to align it correctly */
+.num-wrapper {
+    font-size: 6rem;
+    line-height: 60px;
+}
+
+/* data card's number */
+.data__num {
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 60px;
+    color: var(--color-white);
+}
+
+/* data card's text */
+.data__text {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--color-body-caption);
+}
 
 /* --------------- section3, our clients here ------------------- */
 /* clients container */
@@ -551,6 +610,20 @@ html {
     .logo__wrapper {
         width: 20%;
     }
+
+    /* section4 media query changes */
+    .data-card {
+        flex-direction: row;
+    }
+
+    .data-chart {
+        flex-direction: row;
+    }
+
+    .data__num {
+        font-size: 8rem;
+        line-height: 80px;
+    }
 }
 
 @media (min-width: 900px) {
@@ -622,6 +695,20 @@ html {
 
     .logo__wrapper {
         width: 20%;
+    }
+
+    /* section4 media query changes */
+    .data-card {
+        flex-direction: row;
+    }
+
+    .data-chart {
+        flex-direction: row;
+    }
+
+    .data__num {
+        font-size: 8rem;
+        line-height: 80px;
     }
 }
 
@@ -695,5 +782,19 @@ html {
 
     .logo__wrapper {
         width: 20%;
+    }
+
+     /* section4 media query changes */
+     .data-card {
+        flex-direction: row;
+    }
+
+    .data-chart {
+        flex-direction: row;
+    }
+
+    .data__num {
+        font-size: 6rem;
+        line-height: 60px;
     }
 }
