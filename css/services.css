@@ -1172,15 +1172,12 @@
   
   .alert--error{
     display: none;
-    width: 100%; 
-    font-size: 1.3rem; 
-  }
-  
-  
-  .alert--text{
-    color: var(--color-body);
+    width: 90%;  
     font-size: 1.6rem;
+    color: var(--color-body);
+    font-size: 1.4rem;
     line-height: 28px;
+    justify-content: center;
   }
   
   
@@ -1616,10 +1613,7 @@
       text-align: left;
    
     }
-    .alert--error{
-      width: 50%; 
-      
-    }
+    
   
   }
   
