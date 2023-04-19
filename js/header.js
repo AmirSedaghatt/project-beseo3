@@ -5,13 +5,14 @@ const menu = document.querySelector(".nav_mobile--menu")
 
 hamburger.addEventListener("click" , ()=> {
     menu.classList.add("show")
-    
+      // document.querySelector(".body_color").style.display="block"
 
 })
 
 
 closeBtn.addEventListener("click" , ()=> {
     menu.classList.remove("show")
+      // document.querySelector(".body_color").style.display="none"
     
 })
 
@@ -24,15 +25,15 @@ function scrollFunction() {
   
     document.getElementById("nav_logo--img").style.width ="50%";
     document.getElementById("nav").style.backgroundColor="rgba(255,255,255,.9)";
-    document.getElementById("nav").style.padding="0";
-    document.getElementById("nav").style.height="62px";
+    document.querySelector(".nav_logo").style.padding ="0"
+
 
 
   } else {
     document.getElementById("nav_logo--img").style.width ="80%";
     document.getElementById("nav").style.backgroundColor="rgba(255,255,255,1)";
-    document.getElementById("nav").style.padding="0 0";
-    document.getElementById("nav").style.height="100px";
+    document.querySelector(".nav_logo").style.padding ="20px 0"
+
     
   }
 }
