@@ -19,6 +19,13 @@
 
 /* -------------------------------header------------------------------- */
 
+.body_color{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  background-color: rgba(102,102,102,.4);
+}
 .nav {
     width: 100%;
     position:fixed;
@@ -64,6 +71,7 @@
     display:flex;
     align-items: center;
     flex-basis: 50%;
+    
   }
   
   
@@ -361,6 +369,7 @@
   
     .nav_right{
       gap: 60px;
+      
     }
   
   }
@@ -419,27 +428,6 @@
     }
   
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1184,9 +1172,8 @@
   
   .alert--error{
     display: none;
-    width: 50%; 
+    width: 100%; 
     font-size: 1.3rem; 
-    
   }
   
   
@@ -1463,6 +1450,7 @@
     .copyright_link {
       width: 100%;
     }
+    
   
   }
   
@@ -1627,6 +1615,10 @@
       padding: 0;
       text-align: left;
    
+    }
+    .alert--error{
+      width: 50%; 
+      
     }
   
   }

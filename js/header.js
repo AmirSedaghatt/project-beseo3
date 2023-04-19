@@ -5,14 +5,16 @@ const menu = document.querySelector(".nav_mobile--menu")
 
 hamburger.addEventListener("click" , ()=> {
     menu.classList.add("show")
-    document.getElementById("body").style.backgroundColor="rgba(102,102,102,.4)";
+    // document.getElementById("body-color").style.backgroundColor="rgba(102,102,102,.4)";
+    document.getElementById("body-color").style.display="block";
 
 })
 
 
 closeBtn.addEventListener("click" , ()=> {
     menu.classList.remove("show")
-    document.getElementById("body").style.backgroundColor="rgba(102,102,102,0)";
+    // document.getElementById("body-color").style.backgroundColor="rgba(102,102,102,0)";
+    document.getElementById("body-color").style.display="none";
 })
 
 
@@ -25,7 +27,7 @@ function scrollFunction() {
     document.getElementById("nav_logo--img").style.width ="50%";
     document.getElementById("nav").style.backgroundColor="rgba(255,255,255,.9)";
     document.getElementById("nav").style.padding="0";
-    document.getElementById("nav").style.height="62px";
+    document.getElementById("nav").style.height="80px";
 
 
   } else {
