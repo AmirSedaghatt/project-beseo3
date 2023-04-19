@@ -700,4 +700,787 @@ table {
 
 }
 
+
+
+/* -----------------------footer section---------------------------- */
+
+
+/* ........................................ main-container ........................................ */
+.footer {
+    background: url("../assets/images/backgrounds/seo3-bg6.jpg");
+    background-color: var(--color-card-data);
+    width: 100%; 
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: fit-content;
+    padding-top: 300px;
+  }
+  
+  
+  /* ..................................... helper-container ....................................... */
+  .footer-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* ..................................... top-section .................................................. */
+  .newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%; 
+  }
+  
+  /* ...................................... join-us-badge------------------------------------------------- */
+  .newsletter_badge--join {
+    width: 108px;
+    background-color: var( --color-body-caption-bg);
+    color:var(--color-body-caption);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  
+  .badge_join--text {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-label);
+    font-size: 1.4rem;
+     /*14 is the original font size  */
+    font-weight: 700;
+    line-height: 24px; 
+  }
+  
+  /* ................................... newsletter design ........................................................... */
+  .footer_title {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  
+  
+  .footer_title--text {
+    color: var(--color-white);
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+  
+  
+  /* ...................................... form design .................................................................. */
+  .footer_input {
+    
+    width: 100%;
+    margin-top: 14px;
+    position: relative;
+  }
+  
+  
+  .footer_input--box {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: var( --color-footer-input-placeholder);
+    font-size: 1.4rem;
+    color: var(--color-white); 
+  }
+  
+  
+  /* .......................................... validation email ....................................................... */
+  .alert{
+    background-color: var(--color-alert);
+    width:46px ;
+    height: 46px;
+    position: absolute;
+    left: -52px;
+    top: 50%;
+    transform: translatey(-40%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
+  
+  .alert::after{
+    background-color: var(--color-alert);
+    content: "";
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg) translatey(-50%);
+    position: absolute;
+    right: 0;
+    top: 50%;  
+  }
+  
+  
+  .alert--error{
+    display: none;
+    width: 50%; 
+    font-size: 1.3rem; 
+    
+  }
+  
+  
+  .alert--text{
+    color: var(--color-body);
+    font-size: 1.6rem;
+    line-height: 28px;
+  }
+  
+  
+  .show{
+    display: flex;
+  }
+  
+  /* ......................................................... sign-up design ...................................................... */
+  .footer_sign {
+    width: 120px;
+    background-color: var(--color-label);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+  }
+  
+  
+  .footer_sign--btn {
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: var(--color-white);
+    background-color: var(--color-sign-up-btn);
+    font-size: 1.3rem;
+    border-radius: 50px;
+    /* this size is taken from inspect */
+    cursor: pointer;
+  }
+  
+  /* ............................................................. widget design ........................................................... */
+  .widgets {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px ;
+    margin-bottom: 60px; 
+  }
+  
+  /*......................................................address design ................................................................ */
+  .address {
+    align-self:flex-start;
+    width: 180px;
+    padding: 40px 0;  
+  }
+  
+  .address_text{ 
+    width: 100%;
+  }
+  
+  .address_text,
+  .worktime {
+    color: var(--color-white);
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  
+  /* .................................................... social design .................................................................... */
+  .socials {
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* ......................................................worktime design .................................................................... */
+  .worktime {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* .......................................................icons design ........................................................................ */
+  .icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .twitter{
+    font-size: 25px;
+    width: 25px;
+    cursor: pointer;
+  }
+  
+  
+  .facebook {
+    width: 22px;
+  }
+  
+  
+  .skype {
+    width: 27px;
+  }
+  
+  
+  .facebook:hover{
+    filter: brightness(0) saturate(100%) invert(76%) sepia(17%) saturate(3426%) hue-rotate(347deg) brightness(97%) contrast(105%);;  
+  }
+  
+  
+  .skype:hover{
+    filter: brightness(0) saturate(100%) invert(76%) sepia(17%) saturate(3426%) hue-rotate(347deg) brightness(97%) contrast(105%);;
+  }
+  
+  
+  .twitter:hover{
+    filter: brightness(0) saturate(100%) invert(76%) sepia(17%) saturate(3426%) hue-rotate(347deg) brightness(97%) contrast(105%);
+  }
+  
+  /* .............................................. contact design ............................................................... */
+  .contact {
+    padding: 40px 0;
+    align-self: flex-end;
+  }
+  
+  
+  .contact_phone,
+  .contact_mail {
+    display: flex;
+    padding: 4px 0;
+    gap: 4px;
+    justify-content: flex-end;
+  }
+  
+  
+  .contact_phone--icon{
+    width: 15px;
+  }
+  
+  
+  .contact_mail--icon{
+    width: 15px; 
+  }
+  
+  
+  .contact_phone--text,
+  .contact_mail--text{
+    color: var(--color-white);
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 26px;
+  
+  }
+  
+  /* ............................................ line design ................................................................ */
+  
+  .line{
+    display: flex;
+    width: 100%;
+    height: 1px;
+    background-color: var( --color-footer-line);
+  }
+  
+  /* ............................................ copyright section design ......................................................... */
+  .copyright {
+    width: 100%;
+    padding: 10px 30px 30px;
+    border-top: 1px solid var(--color-footer-line);  
+  }
+  
+  /* .............................................. helper container ................................................................ */
+  .copyright__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*................................................ navigation design ................................................................ */
+  .navigation {
+    padding: 4px 0;
+  }
+  
+  .navigation_icon {
+    width: 32px;
+  }
+  
+  /*................................................. copyright text design ............................................................ */
+  
+  .copyright_text,
+  .copyright_link {
+    text-align: center;
+    color: var(--color-white);
+    font-size: 1.3rem;
+    line-height: 20px;
+    width: 100%;
+    padding: 30px 0;  
+  }
+  
+  
+  .copyright_link {
+    text-decoration: none;
+  }
+  
+  
+  .copyright_link:hover {
+    color: var(--color-label);
+    text-decoration: underline;
+  }
+  
+  /* .................................................. mobile first end .................................................................. */
+  
+  
+  /* ..................................................... start mediaqueri............................................................... */
+  
+  
+  /* ..................................................... change width.................................................................. */
+  
+  /* in each mediaqueri almost width changes so we need to change footer-container   */
+  
+                                                                  /*  mobile */  
+  
+  /* ............................................................ first mediaqueri .............................................................. */
+  
+  @media (min-width:436px) {
+  
+    .footer-container{
+      width: 88%;
+    }
+  
+  }
+  
+  /* ............................................................ second mediaqueri .............................................................. */
+  
+  @media (min-width: 480px) {
+  
+    .copyright_text p{
+     font-size: 1.3rem;
+     line-height: 20px;
+     width: 100%;
+     padding: 40px 0px 0px;
+    }
+    
+  
+    .footer-containers{
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .badge_join--text {
+      font-size: 1.4rem;
+    }
+  
+  
+    .footer_title--text {
+      font-size: 4.2rem;
+      font-weight: 700;
+    }
+  
+  
+    .contact_phone--text,
+    .contact_mail--text{
+      font-size: 1.4rem;
+    }
+  
+  
+    .copyright_text,
+    .copyright_link {
+      width: 100%;
+    }
+  
+  }
+  
+  
+  /* ............................................................ third  mediaqueri .............................................................. */
+  @media (min-width:518px) {
+    .copyright{
+      padding-right: 0;
+      padding-left: 0;
+    }
+  
+    .widgets{
+      padding: 20px 0 0;
+    }
+  
+    .copyright_text{
+      padding:20px 0 0;
+    }
+  
+  }
+  
+  /* ............................................................ fourth mediaqueri .............................................................. */
+  
+  @media (min-width:540px) {
+  
+    .widgets{
+      padding: 60px 0 0;
+    }
+  
+    .copyright_text{
+      padding:20px 0 0;
+    }
+  
+  }
+  /* ............................................................ fifth mediaqueri .............................................................. */
+  
+  @media (min-width:583px) {
+  
+    .copyright{
+      padding-right: 0;
+      padding-left: 0;
+    }
+   
+  }
+  
+  /* ............................................................ sixth  mediaqueri .............................................................. */
+  
+  @media (min-width:636px) {
+    .footer-container{
+      width: 70%;
+    }
+  
+  }
+  
+  /* ............................................................ seventh mediaqueri .............................................................. */
+  @media (min-width:680px) {
+    .footer-container{
+      width: 70%;
+    }
+  
+  }
+  
+  /* ............................................................ eightth mediaqueri .............................................................. */
+  @media (min-width:760px) {
+    .footer-container{
+      width: 60%;
+    }
+  
+  }
+  
+  
+  
+  
+                                                                 /* tablet */
+  
+  /* ............................................................ first mediaqueri .............................................................. */
+  
+  @media (min-width: 768px) {
+    .footer-container{
+      width: 90%;
+    }
+  
+    .badge_join--text {
+  
+      font-size: 1.3rem;
+    }
+  
+    .footer_title--text {
+      font-size: 4.6rem; 
+    }
+  
+    .footer_input {
+      width: 60%;
+    }
+  
+    .address_text{
+  
+      font-size: 1.4rem;
+      line-height: 24px;
+      width: 80%;
+    }
+  
+    .worktime{
+      font-size: 1.4rem;
+    }
+  
+    .contact_phone--text,
+    .contact_mail--text{
+  
+      font-size: 1.6rem;
+      line-height: 28px;
+  
+    }
+  
+  
+    .widgets {
+  
+      flex-direction: row;
+      justify-content: space-between;
+      
+    }
+  
+    .address,
+    .socials,
+    .contact {
+      flex-basis: 30%;
+      align-items: flex-start;
+    }
+  
+  
+    .copyright__wrapper{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  
+  
+    .navigation{
+      padding: 4px 30px;
+    }
+  
+  
+    .copyright_text,
+    .copyright_link {
+  
+     font-size: 1.4rem;
+  
+    } 
+  
+  
+    .copyright{
+    
+      padding-right: 0;
+      padding-left: 0;
+      padding-top: 20px;
+  
+    }
+    
+    .copyright_text{
+    
+      padding: 0;
+      text-align: left;
+   
+    }
+  
+  }
+  
+  
+  /* ............................................................ second mediaqueri .............................................................. */
+  
+  @media (min-width: 800px) {
+    .footer-container{
+      width: 85%;
+    }
+  }
+  
+  /* ............................................................ third mediaqueri .............................................................. */
+  
+  @media (min-width: 860px) {
+    .footer-container{
+      width: 80%;
+    }
+  }
+  
+  /* ............................................................ fourth mediaqueri .............................................................. */
+  @media (min-width: 900px) {
+    .footer-container{
+      width: 75%;
+    }
+    
+  }
+  
+  
+  /* ............................................................ fifth mediaqueri .............................................................. */
+  @media (min-width: 938px){
+  
+    .footer-container{
+      width: 75%;
+    }
+    
+  }
+  
+  /* ............................................................ sixth mediaqueri .............................................................. */
+  
+  @media (min-width: 959px) {
+    .footer-container{
+      width: 98%;
+      
+    }
+  
+    .newsletter_badge--join {
+      
+      padding: 4px 0;
+    }
+  
+    .badge_join--text {
+      font-size: 1.4rem;
+    }
+  
+    
+    .footer_title--text{
+      font-size: 5.4rem;
+    }
+  
+    .footer_input {
+      width: 560px;
+    }
+  
+  
+    .footer_sign--btn {
+      font-size: 1.6rem;
+   
+    }
+  
+  
+  
+    .widgets {
+      flex-direction: row;
+      justify-content: space-between;
+      
+    }
+    
+  
+    .address_text,
+    .worktime {
+      font-size: 1.6rem;
+      line-height: 28px;
+    }
+  
+  
+  
+    .contact_phone--text,
+    .contact_mail--text{
+      
+      font-size: 1.8rem;
+      
+    }
+  
+  
+  
+    .contact_phone--icon{
+      width: 20px;
+    }
+  
+  
+    .contact_mail--icon{
+      width: 20px;
+    
+    }
+  
+  
+    .contact_phone,
+    .contact_mail {
+      
+      gap: 6px;
+      padding: 8px 0;
+      
+    }
+  
+  
+    .copyright_text{
+      font-size: 1.6rem;
+      
+    }
+  
+  }
+  
+                                                                  /* desktop  */
+  
+  /* ............................................................ first mediaqueri .............................................................. */
+  @media (min-width: 963px){
+    .footer-container{
+      width: 95%;
+      
+    }
+  
+  } 
+  
+  /* ............................................................ second mediaqueri .............................................................. */
+  @media (min-width:1000px){
+    .footer-container{
+      width: 92%;
+      
+    }
+  }
+  
+  /* ............................................................ third mediaqueri .............................................................. */
+  @media (min-width:1020px){
+      .footer-container{
+        width: 90%;
+        
+      }
+  }
+  
+  /* ............................................................ fourth mediaqueri .............................................................. */
+  @media (min-width:1114px){
+        .footer-container{
+          width: 85%;
+        
+        }
+  
+  }
+  
+  /* ............................................................ fifth mediaqueri .............................................................. */
+  
+  @media (min-width:1120px){
+    .footer-container{
+      width: 80%;
+    
+    }
+  
+  }
+  
+  /* ............................................................ sixth mediaqueri .............................................................. */
+  @media (min-width:1160px){
+    .footer-container{
+      width: 75%;
+    
+    }
+  
+  }
+  
+  /* ............................................................ seventh mediaqueri .............................................................. */
+  
+  @media (min-width:1239px){
+    .footer-container{
+      width: 95%;
+    
+    }
+  
+    .address_text{
+      
+      width: 60%;
+    }
+  
+  }
+  
+  /* ............................................................ eights mediaqueri .............................................................. */
+  @media (min-width:1240px){
+    .footer-container{
+      width: 85%;
+    
+    }
+   
+  }
+  
+  /* ............................................................ ninth mediaqueri .............................................................. */
+  
+  @media (min-width:1260px){
+    .footer-container{
+      width: 65%;
+    
+    }
+  
+    
+  }
+  
+  
+  /* ...................................................................end code .................................................................. */
   
