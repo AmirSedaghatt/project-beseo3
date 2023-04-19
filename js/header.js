@@ -6,6 +6,7 @@ const menu = document.querySelector(".nav_mobile--menu")
 hamburger.addEventListener("click" , ()=> {
     menu.classList.add("show")
     document.getElementById("body").style.backgroundColor="rgba(102,102,102,.4)";
+    document.getElementById("body-color").style.display="block";
 
 })
 
@@ -13,6 +14,7 @@ hamburger.addEventListener("click" , ()=> {
 closeBtn.addEventListener("click" , ()=> {
     menu.classList.remove("show")
     document.getElementById("body").style.backgroundColor="rgba(102,102,102,0)";
+    document.getElementById("body-color").style.display="block";
 })
 
 
