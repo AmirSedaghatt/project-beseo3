@@ -272,6 +272,7 @@ html {
 
 
 /* --------------- section3, our clients here ------------------- */
+/* clients container */
 .our-clients {
     padding: 110px 33px 0;
     background-image: url(/assets/images/backgrounds/seo3-bg5.png);
@@ -279,43 +280,35 @@ html {
     background-position: center;
 }
 
+/* "our clients" content wrapper */
 .client__wrapper {
     width: 100% !important;
 }
 
+/* "our clients" title container */
 .client__caption {
     margin-top: 50px;
 }
 
-.client__caption--wrapper {
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.caption {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.caption__align {
-    text-align: center;
-}
-
+/* "our clients" title */
 .caption__text {
-    margin-bottom: 15px;
+    margin-bottom: 40px;
     font-weight: 700;
     font-size: 3.2rem;
     line-height: 32px;
+    text-align: center;
     letter-spacing: 0px;
     text-decoration: none;
     color: var(--color-headings);
 }
 
+/* makes white-space between "our clients" title and logos */
 .white-space {
     width: 100%;
     margin: 0 auto 10px auto;
 }
 
+/* clients logo */
 .logo {
     width: 100%;
     display: flex;
@@ -323,10 +316,12 @@ html {
     margin-top: 30px;
 }
 
+/* makes logos wrap in row flex */
 .logo__wrapper {
     width: 50%;
 }
 
+/* logo container */
 .logo__frame {
     padding: 10px 15px;
     margin: 10px;
@@ -343,6 +338,7 @@ html {
     background: rgba(0,0,0,.05);
 }
 
+/* places logos in the center */
 .logo__size{
     display: flex;
     justify-content: center;
@@ -351,11 +347,13 @@ html {
     height: 100%;
 }
 
+/* logos size */
 .logo__img {
     width: 145px;
     height: 75px;
 }
 
+/* makes logos responsive */
 .logo__img--scale {
     max-width: 100%;
     height: auto;
