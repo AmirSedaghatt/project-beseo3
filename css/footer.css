@@ -78,7 +78,7 @@
 /* ...................................... join-us-badge------------------------------------------------- */
 .newsletter_badge--join {
   width: 108px;
-  background-color: var(--color-label-bg);
+  background-color: var(--color-body-caption-bg);
   border-radius: 16px;
   display: flex;
   align-items: center;
@@ -92,7 +92,7 @@
   height: 100%;
   text-align: center;
   text-decoration: none;
-  color: var(--color-label);
+  color: var(--color-body-caption);
   font-size: 1.4rem;
    /*14 is the original font size  */
   font-weight: 700;
@@ -183,7 +183,7 @@
 /* ......................................................... sign-up design ...................................................... */
 .footer_sign {
   width: 120px;
-  background-color: var(--color-label);
+  background-color: var(--color-body-caption);
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -376,7 +376,7 @@
 
 
 .copyright_link:hover {
-  color: var(--color-label);
+  color: var(--color-body-caption);
   text-decoration: underline;
 }
 
