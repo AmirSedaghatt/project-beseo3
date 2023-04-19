@@ -1,6 +1,7 @@
 /* Reset */
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -38,7 +39,8 @@ section {
   display: block;
 }
 body {
-  line-height: 1;
+    line-height: 1;
+    
 }
 ol,
 ul {
@@ -59,6 +61,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
 
 /* Root Variables */
 :root {

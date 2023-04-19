@@ -1,0 +1,1832 @@
+
+@import"/css/main.css";
+
+
+@font-face {
+    font-family:"archivo";
+    src: url("../assets/fonts/archivo/Archivo-VariableFont_wdth\,wght.ttf");
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Archivo" , sans-serif;
+}
+
+
+/* -------------------------------header------------------------------- */
+
+/* .body_color{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  
+} */
+.nav {
+    width: 100%;
+    position:fixed;
+    top: 0;
+    transition: .4s;
+    z-index: 10;
+  }
+  
+  
+  /* .............................. helper container .......................................................... */
+  
+  .nav_container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+  
+  .nav_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+  }
+  
+  /* .................................. navbar a-tag design ................................................................... */
+  .nav a.active {
+    color: var(--color-navbar-items);
+  }
+  
+  
+  .nav a {
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+  
+  /* ........................................... making sections in navbar ............................................ */
+  .nav_right,
+  .nav_left {
+    display:flex;
+    align-items: center;
+    flex-basis: 50%;
+    
+  }
+  
+  
+  .nav_right {
+    justify-content: flex-end;
+    gap: 40px;
+  }
+  
+  /* ........................................................ logo design ............................................................. */
+  .nav_logo {
+    transition: all .4s ease;
+    cursor: pointer;
+  
+  }
+  .nav_logo--img {
+    width: 85%;
+  }
+  
+  
+  /* ...............................................................menu desktop ........................................................... */
+  .nav_menu {
+    display: none;
+  }
+  
+  .nav_menu--list {
+    width: 100;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .menu_list--item :hover{
+    color: var(--color-navbar-items);
+  }
+  
+  
+  .menu_list--link {
+    padding: 0 20px;
+    font-size: 17px;
+    color: var( --color-body);
+    font-weight: 500;
+  }
+  
+  
+  /* ........................................................menu mobile .................................................................. */
+  .mobile_nav--wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .nav_mobile--menu {
+    position: fixed;
+    height: 200vh;
+    width: 250px;
+    top: 0;
+    right: -250px;
+    background-color: var(--color-mobile-menu);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: right .4s ease;
+  }
+  
+  .show{
+    right: 0;
+  }
+  
+  
+  .mobile_menu--close {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 16px;
+    cursor: pointer;
+  }
+  
+  
+  .menu_close--btn {
+    width: 28px;
+  }
+  
+  
+  .nav_mobile--button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var( --color-light-btn);
+    border-radius: 24px;
+    width: 85%;
+    height: fit-content;
+    overflow: hidden;
+  }
+  
+  
+  .mobile_button--btn {
+    
+    width: 100%;
+    padding:12px ;
+    height: 144px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  
+  
+  
+  .mobile_btn--text {
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  
+  
+  .nav_mobile--list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  
+  .mobile_list--item {
+    width: 100%;
+    padding: 10px 20px;
+    border-top: 1px solid var(--color-footer-line);
+  }
+  .nav_mobile--list .mobile--active{
+    color: var(--color-white);
+  }
+  .nav_menu .active{
+    color:var(--color-btn) ;
+  }
+  
+  
+  
+  
+  .mobile_list--item:last-child{
+    border-bottom: 1px solid var(--color-footer-line);
+  }
+  
+  
+  .mobile_list--link {
+    font-size: 16px;
+    color: var( --color-light-btn);
+    font-weight: 500;
+  }
+  
+  /* ............................................................hamburgur menu ................................................................ */
+  
+  .nav_hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  
+  .nav_hamburger--img {
+    width: 20px;
+  }
+  
+  /* ...........................................................button buy now .................................................................... */
+  .nav_button {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: var( --color-light-btn);
+    border-radius: 24px;
+    width: 160px;
+    height: 36px;
+    overflow: hidden;
+  }
+  
+  
+  .nav_button--btn {
+    /* width: 144px;
+    height: 64px; */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    cursor: pointer;
+  }
+  
+  
+  
+  .nav_button:hover{
+    background-color:var(--color-mobile-menu-items);
+  
+  }
+  
+  
+  
+  .btn_text {
+    color: var(--color-white);
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  
+  .btn_icon {
+    width: 20px;
+  }
+  
+  /* ..............................................................end mobile-first ................................................ */
+  
+  
+                                                                      /*tablet*/
+  
+    /*.............................................................. first mediaqueri ...................................................................  */
+  
+  @media (min-width: 767px) {
+    .nav_button {
+      display: block;
+      
+    }
+    .nav_container{
+      width: 97%;
+    }
+  
+    .nav_logo{
+      padding: 20px 0;
+    }
+    .nav_logo--img {
+  
+      width: 70%;
+      
+    }
+  
+    .nav_button{
+      width:136px ;
+      height:32px ;
+    }
+  
+    .btn_text {
+      color: var(--color-white);
+      font-size: 1.4rem;
+      font-weight: 500;
+      text-align: center;
+    }
+  
+  }
+  
+  
+  /*.............................................................. second mediaqueri ...................................................................  */
+  
+  @media (min-width: 768px) {
+    .nav_button {
+      display: block;
+      
+    }
+  
+  
+    .nav_container{
+      width: 95%;
+    }
+  
+    /* .nav_logo{
+      padding: 20px 0;
+    }
+   */
+  
+    .nav_logo--img {
+      width: 86%;
+      
+    }
+  
+  
+    .nav_button{
+      width:144px ;
+      height:40px ;
+    }
+  
+  
+    .btn_text {
+      
+      font-size: 1.4rem; 
+    }
+  
+  
+    .nav_right{
+      gap: 60px;
+      
+    }
+  
+  }
+  
+  
+  /*.............................................................. third mediaqueri ...................................................................  */
+  
+  
+  @media (min-width: 958px) {
+    .nav_button{
+      width:160px ;
+      height:40px ;
+    }
+  
+    .btn_text {
+      
+      font-size: 1.6rem;
+     
+    }
+  
+  }
+  
+                                                                  /* desktop */
+  
+  /*.............................................................. first mediaqueri ...................................................................  */
+                                                                  
+  @media (min-width: 1240px) {
+  
+    .nav_wrapper{
+      padding: 0;
+    }
+  
+  
+    .nav_hamburger {
+      display: none;
+    }
+  
+  
+    .nav_menu {
+      display: block;
+    }
+  
+  
+    .nav_container{
+      width: 96%;
+    }
+  
+  
+    .nav_logo--img {
+      width: 90%;
+    }
+  
+  
+    .nav_right{
+      gap: 30px;
+    }
+  
+  }
+
+
+
+/*------------------> services section <--------------------*/
+
+
+.services-section{
+    background-image:url(../assets/images/backgrounds/seo3-sectionbg8.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-top: 120px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+.services{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services__description{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-right:20px ;
+   
+}
+
+.description__title h1{
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height:4.2rem;
+    color: var(--color-headings);
+    margin-bottom: 15px;
+    margin-top: 32px;
+}
+.description__badge p{
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight:700;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    margin-bottom: 15px;
+    background-color: var( --color-body-caption-bg);
+    color:var(--color-body-caption);
+    border-radius: 15px;
+}
+
+.services__image{
+    width: 100%;
+    height:auto;
+
+
+}
+.services__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*-----------------> FAQ section <------------------ */
+.faq-section{
+    padding-top: 80px;
+}
+
+.faq{
+    display: flex;
+    flex-direction: column;
+}
+.faq__title h2{
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    font-weight: 700;
+    color: var(--color-headings);
+    margin-bottom: 40px;
+}
+
+.faq__description p{
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+    margin-bottom: 32px;
+    color: var(--color-body);
+}
+.faq__btn{
+    width: 100%;
+    text-align: right;
+    margin-bottom: 15px;
+}
+.faq__btn a{
+    display: inline-block;
+    padding: 16px 36px;
+    background-color: var(--color-btn);
+    border-radius: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+    transition: .3s ease;
+    opacity: .9;
+}
+.faq__btn a:hover{
+    opacity: 1;
+}
+
+/*-------------> Options section<--------------- */
+
+.options-section{
+    padding-top: 60px;  
+    background-image: url(../assets/images/backgrounds/seo3-bg3.png); 
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+}
+.options__wrapper{
+    width: 100%;
+    padding: 10px 0; 
+}
+
+.options__icon{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 40px 25px;
+    box-shadow:var(--color-card-services-box-shadow);
+    border-radius: 25px;
+    background-color: #fff;
+}
+.icon__image{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+.icon__description{
+    margin-left: 16px;
+}
+.icon__description h4{
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: var(--color-headings);
+    font-weight: 700;
+}
+
+.icon__description p{
+    font-size: 1.3rem;
+    line-height: 1.9;
+    margin-bottom: 15px;
+    color: var(--color-body);
+
+}
+
+/* ------------------------  OUR WORK STARTS  ------------------------ */
+
+
+
+.ourWork {
+    padding-top: 100px;
+    background: url(../assets/images/backgrounds/seo3-bg4.png);
+    background-position: center;
+    padding-top: 150px;
+  }
+  .ourWork_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .ourWork_details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    
+  }
+.ourWork_badge {
+  color: var(--color-body-caption);
+  background-color: var( --color-body-caption-bg);
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  align-self: flex-start;
+  padding: 8px 16px;
+}
+  
+
+  .ourWork_title {
+    width: 100%;
+  }
+  .ourWork_title--text {
+    width: 90%;
+    color: var(--color-card-data);
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: left;
+  }
+  .ourWork_subtitle--text {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: var(--color-body);
+  }
+  .ourWork_specification {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .ourWork_specification--item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .ourWork .item_title--text {
+    color: var(--color-headings);
+    font-size: 1.3rem;
+    font-weight: 700;
+    
+  }
+  .bottom{
+    width: 90%;
+  }
+  .ourWork_about {
+    width: 128px;
+    height: 44px;
+    align-self: flex-start;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  .ourWork_about--btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-btn);
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    opacity: 0.9;
+    transition: .3s ;
+  }
+  
+  .ourWork_about--btn:hover{
+    opacity: 1;
+  }
+  .ourWork_bg{
+    width: 100%;
+  }
+  .ourWork_bg--image {
+    width: 100%;
+    object-fit: cover;
+  }
+
+/*------------------------> media query<----------------------- */
+
+
+/* -----------------------480-------------------------- */
+
+@media (min-width: 480px) {
+    .container{
+        width: 90%;
+    }
+    .description__title h1{
+        font-size: 5.3rem;
+        font-weight:700;
+        line-height:5.3rem;
+        margin-bottom: 15px;
+        
+    }
+    .services__description{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        
+    }
+    .services__image{
+        max-width: 100%;
+        height:auto;
+    }
+    .services__image img{
+        width: 100%;
+        object-fit: contain;
+    }
+    .faq__title h2{
+        font-size: 4.1rem;
+        line-height: 4.1rem;
+    }
+    .faq__description p{
+        font-size: 1.3rem;
+        line-height:1.5;
+        width: 95%;
+        
+    }
+    .faq__btn a{
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+    .options__wrapper{
+        padding: 10px;
+    }
+    
+    .options{
+        display: flex;
+        gap: 0px;
+    }
+  
+    .icon__description{
+        margin-left: 40px;
+    }
+    .icon__description h4{
+        font-size: 1.8rem;
+    }
+    .ourWork_title--text {
+        font-size: 4.1rem;
+        width: 80%;
+      }
+      .ourWork_subtitle--text{
+        font-size: 1.4rem;
+        width: 95%;
+        line-height: 1.6;
+      }
+}
+
+/* ---------------->600<------------- */
+
+
+@media (min-width:600px) {
+    .container{
+        width: 80%;
+    }
+    .description__title h1{
+        font-size: 5.3rem;   
+    }
+    .icon__image{
+        display: flex;
+        padding-bottom: 36px;
+    }
+    .faq__description p{
+        width: 100%;
+    }
+    .ourWork_title--text {
+        font-size: 4.1rem;
+        width: 90%;
+      }
+    .ourWork_subtitle--text{
+        font-size: 1.4rem;
+        width: 90%;
+        line-height: 1.6;
+      }
+    
+      .item_title .item_title--text{
+        font-size:1.4rem;
+        width: 100%;
+      }
+   
+ 
+
+}
+
+/* -----------------------786----------------- */
+@media (min-width:768px) {
+    .container{
+        width: 90%;
+    }
+    .services{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  
+    .description__title h1{
+        font-size:6rem;
+        line-height: 6rem;   
+    }
+    .faq__description{
+        display: flex;
+        
+    }
+    .faq__title h2{
+        font-size: 4.6rem;
+        line-height: 4.6rem;
+    }
+    .faq__description p{
+        font-size: 1.4rem;
+        line-height:1.5;
+        width: 80%;
+        
+    }
+    .faq__btn{
+        width: 40%;
+        text-align: right;
+        margin-bottom: 15px;
+    }
+    .options__icon{
+        display: flex;
+        flex-direction: row;
+        padding: 50px 40px 25px;
+        box-shadow: 0px 10px 30px rgba(55,43,125,.1);
+        border-radius: 25px;
+        justify-content: center;
+    }
+    .options{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .options__wrapper{
+        width: 50%;
+    }
+    .icon__image{
+        width: 40%;
+        height:100%;
+
+    }
+    .icon__description h4{
+        font-size: 2rem;
+        font-weight: 700;
+
+    }
+    .icon__description{
+        margin-left: 40px;
+    }
+    .icon__image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .icon__description{
+        padding: none;
+        margin-left:20px;
+        margin-bottom: 10px;
+        max-width: 68%;
+       
+    }
+    .icon__description p{
+        font-size: 1.4rem;
+        line-height: 1.8;
+        
+    }
+    .ourWork_wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+      .ourWork_details {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 25px;
+        width: 90%;
+        
+      }
+      .ourWork_subtitle--text{
+        font-size: 1.4rem;
+        width: 95%;
+        line-height: 1.6;
+      }
+    
+      .item_title .item_title--text{
+        font-size:1.6rem;
+        
+      }
+}
+
+
+
+/* ----------------900--------------------------- */
+@media (min-width: 900px) {
+    .container{
+        width: 80%;
+    }
+    .services__description{
+        padding-right: 38px;
+    }
+    .faq__description{
+        display: flex;
+        flex-direction: row;
+    }
+    .faq__title h2{
+        font-size: 4.6rem;
+    }
+    .faq__description p{
+        line-height: 2;
+        width: 100%;
+    }
+    .faq__btn{
+        width: 50%;
+    }
+    .options__icon{
+        display: flex;
+        flex-direction: row;
+        padding: 50px 40px 25px;
+        box-shadow: 0px 10px 30px rgba(55,43,125,.1);
+        border-radius: 25px;
+        justify-content: center;
+    }
+    .options{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .options__wrapper{
+        width: 50%;
+    }
+    .icon__image{
+        width: 24%;
+        height:100%;
+
+    }
+    .icon__description h4{
+        font-size: 2rem;
+
+    }
+    .icon__image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .icon__description h4{
+     padding-right: 10px;
+       
+    }
+    .icon__description p{
+        font-size: 1.4rem;
+        line-height: 2;
+    }
+    .ourWork_badge {
+      padding: 8px 20px;
+      font-size: 1.4rem;
+    }
+    .ourWork_title--text {
+        font-size: 4.6rem;
+      }
+      .ourWork_subtitle--text{
+        font-size: 1.4rem;
+        line-height: 1.6;
+      }
+    
+      .item_title .item_title--text{
+        font-size:1.5rem;
+        width: 100%;
+      }
+      .ourWork_about--btn{
+        font-size: 1.4rem;
+      }
+    
+} 
+
+
+/* -----------------------------------1000------------------------- */
+@media (min-width:1000px) {
+    .container{
+        width: 90%;
+    }
+    .services__description{
+        padding-right: 36px;
+    }
+    .description__title h1{
+        font-size: 7rem;
+        line-height:7rem;  
+    }
+    .faq__title h2{
+        font-size: 5.4rem;
+    }
+    .faq__description p{
+        line-height: 2;
+        font-size: 1.6rem;
+
+    }
+    .faq__btn{
+        max-width: 30%;
+    }
+    .icon__image{
+        width: 20%;
+        height:100%;
+
+    }
+    .icon__description{
+        width: 68%;
+        margin-left: 40px;
+        
+    }
+    .icon__description h4{
+        font-size: 2.4rem;
+        padding: 0;
+    }
+    .icon__description p{
+        font-size: 1.6rem;
+        line-height: 1.8;
+        
+    }
+    .ourWork_title--text {
+        font-size: 5.4rem;
+        width: 90%;
+      }
+      .ourWork_subtitle--text{
+        font-size: 1.6rem;
+        line-height: 1.6;
+      }
+      .item_title .item_title--text{
+        font-size:1.8rem;
+        width: 100%;
+      }
+      .ourWork_about--btn{
+        font-size: 1.6rem;
+      }
+
+}
+
+
+
+/* -----------------------footer section---------------------------- */
+
+
+/* ........................................ main-container ........................................ */
+.footer {
+    background: url("../assets/images/backgrounds/seo3-bg6.jpg");
+    background-color: var(--color-card-data);
+    width: 100%; 
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: fit-content;
+    padding-top: 300px;
+  }
+  
+  
+  /* ..................................... helper-container ....................................... */
+  .footer-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* ..................................... top-section .................................................. */
+  .newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%; 
+  }
+  
+  /* ...................................... join-us-badge------------------------------------------------- */
+  .newsletter_badge--join {
+    width: 108px;
+    background-color: var( --color-body-caption-bg);
+    color:var(--color-body-caption);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  
+  .badge_join--text {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-label);
+    font-size: 1.4rem;
+     /*14 is the original font size  */
+    font-weight: 700;
+    line-height: 24px; 
+  }
+  
+  /* ................................... newsletter design ........................................................... */
+  .footer_title {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  
+  
+  .footer_title--text {
+    color: var(--color-white);
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+  
+  
+  /* ...................................... form design .................................................................. */
+  .footer_input {
+    
+    width: 100%;
+    margin-top: 14px;
+    position: relative;
+  }
+  
+  
+  .footer_input--box {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: var( --color-footer-input-placeholder);
+    font-size: 1.4rem;
+    color: var(--color-white); 
+  }
+  
+  
+  /* .......................................... validation email ....................................................... */
+  .alert{
+    background-color: var(--color-alert);
+    width:46px ;
+    height: 46px;
+    position: absolute;
+    left: -52px;
+    top: 50%;
+    transform: translatey(-40%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
+  
+  .alert::after{
+    background-color: var(--color-alert);
+    content: "";
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg) translatey(-50%);
+    position: absolute;
+    right: 0;
+    top: 50%;  
+  }
+  
+  
+  .alert--error{
+    display: none;
+    width: 90%;  
+    font-size: 1.6rem;
+    color: var(--color-body);
+    font-size: 1.4rem;
+    line-height: 28px;
+    justify-content: center;
+  }
+  
+  
+  .show{
+    display: flex;
+  }
+  
+  /* ......................................................... sign-up design ...................................................... */
+  .footer_sign {
+    width: 120px;
+    background-color: var(--color-label);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+  }
+  
+  
+  .footer_sign--btn {
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: var(--color-white);
+    background-color: var(--color-sign-up-btn);
+    font-size: 1.3rem;
+    border-radius: 50px;
+    /* this size is taken from inspect */
+    cursor: pointer;
+  }
+  
+  /* ............................................................. widget design ........................................................... */
+  .widgets {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px ;
+    margin-bottom: 60px; 
+  }
+  
+  /*......................................................address design ................................................................ */
+  .address {
+    align-self:flex-start;
+    width: 180px;
+    padding: 40px 0;  
+  }
+  
+  .address_text{ 
+    width: 100%;
+  }
+  
+  .address_text,
+  .worktime {
+    color: var(--color-white);
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  
+  /* .................................................... social design .................................................................... */
+  .socials {
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* ......................................................worktime design .................................................................... */
+  .worktime {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* .......................................................icons design ........................................................................ */
+  .icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .twitter{
+    font-size: 25px;
+    width: 25px;
+    cursor: pointer;
+  }
+  
+  
+  .facebook {
+    width: 22px;
+  }
+  
+  
+  .skype {
+    width: 27px;
+  }
+  
+  
+  .facebook:hover{
+    filter: brightness(0) saturate(100%) invert(76%) sepia(17%) saturate(3426%) hue-rotate(347deg) brightness(97%) contrast(105%);;  
+  }
+  
+  
+  .skype:hover{
+    filter: brightness(0) saturate(100%) invert(76%) sepia(17%) saturate(3426%) hue-rotate(347deg) brightness(97%) contrast(105%);;
+  }
+  
+  
+  .twitter:hover{
+    filter: brightness(0) saturate(100%) invert(76%) sepia(17%) saturate(3426%) hue-rotate(347deg) brightness(97%) contrast(105%);
+  }
+  
+  /* .............................................. contact design ............................................................... */
+  .contact {
+    padding: 40px 0;
+    align-self: flex-end;
+  }
+  
+  
+  .contact_phone,
+  .contact_mail {
+    display: flex;
+    padding: 4px 0;
+    gap: 4px;
+    justify-content: flex-end;
+  }
+  
+  
+  .contact_phone--icon{
+    width: 15px;
+  }
+  
+  
+  .contact_mail--icon{
+    width: 15px; 
+  }
+  
+  
+  .contact_phone--text,
+  .contact_mail--text{
+    color: var(--color-white);
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 26px;
+  
+  }
+  
+  /* ............................................ line design ................................................................ */
+  
+  .line{
+    display: flex;
+    width: 100%;
+    height: 1px;
+    background-color: var( --color-footer-line);
+  }
+  
+  /* ............................................ copyright section design ......................................................... */
+  .copyright {
+    width: 100%;
+    padding: 10px 30px 30px;
+    border-top: 1px solid var(--color-footer-line);  
+  }
+  
+  /* .............................................. helper container ................................................................ */
+  .copyright__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*................................................ navigation design ................................................................ */
+  .navigation {
+    padding: 4px 0;
+  }
+  
+  .navigation_icon {
+    width: 32px;
+  }
+  
+  /*................................................. copyright text design ............................................................ */
+  
+  .copyright_text,
+  .copyright_link {
+    text-align: center;
+    color: var(--color-white);
+    font-size: 1.3rem;
+    line-height: 20px;
+    width: 100%;
+    padding: 30px 0;  
+  }
+  
+  
+  .copyright_link {
+    text-decoration: none;
+  }
+  
+  
+  .copyright_link:hover {
+    color: var(--color-label);
+    text-decoration: underline;
+  }
+  
+  /* .................................................. mobile first end .................................................................. */
+  
+  
+  /* ..................................................... start mediaqueri............................................................... */
+  
+  
+  /* ..................................................... change width.................................................................. */
+  
+  /* in each mediaqueri almost width changes so we need to change footer-container   */
+  
+                                                                  /*  mobile */  
+  
+  /* ............................................................ first mediaqueri .............................................................. */
+  
+  @media (min-width:436px) {
+  
+    .footer-container{
+      width: 88%;
+    }
+  
+  }
+  
+  /* ............................................................ second mediaqueri .............................................................. */
+  
+  @media (min-width: 480px) {
+  
+    .copyright_text p{
+     font-size: 1.3rem;
+     line-height: 20px;
+     width: 100%;
+     padding: 40px 0px 0px;
+    }
+    
+  
+    .footer-containers{
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .badge_join--text {
+      font-size: 1.4rem;
+    }
+  
+  
+    .footer_title--text {
+      font-size: 4.2rem;
+      font-weight: 700;
+    }
+  
+  
+    .contact_phone--text,
+    .contact_mail--text{
+      font-size: 1.4rem;
+    }
+  
+  
+    .copyright_text,
+    .copyright_link {
+      width: 100%;
+    }
+    
+  
+  }
+  
+  
+  /* ............................................................ third  mediaqueri .............................................................. */
+  @media (min-width:518px) {
+    .copyright{
+      padding-right: 0;
+      padding-left: 0;
+    }
+  
+    .widgets{
+      padding: 20px 0 0;
+    }
+  
+    .copyright_text{
+      padding:20px 0 0;
+    }
+  
+  }
+  
+  /* ............................................................ fourth mediaqueri .............................................................. */
+  
+  @media (min-width:540px) {
+  
+    .widgets{
+      padding: 60px 0 0;
+    }
+  
+    .copyright_text{
+      padding:20px 0 0;
+    }
+  
+  }
+  /* ............................................................ fifth mediaqueri .............................................................. */
+  
+  @media (min-width:583px) {
+  
+    .copyright{
+      padding-right: 0;
+      padding-left: 0;
+    }
+   
+  }
+  
+  /* ............................................................ sixth  mediaqueri .............................................................. */
+  
+  @media (min-width:636px) {
+    .footer-container{
+      width: 70%;
+    }
+  
+  }
+  
+  /* ............................................................ seventh mediaqueri .............................................................. */
+  @media (min-width:680px) {
+    .footer-container{
+      width: 70%;
+    }
+  
+  }
+  
+  /* ............................................................ eightth mediaqueri .............................................................. */
+  @media (min-width:760px) {
+    .footer-container{
+      width: 60%;
+    }
+  
+  }
+  
+  
+  
+  
+                                                                 /* tablet */
+  
+  /* ............................................................ first mediaqueri .............................................................. */
+  
+  @media (min-width: 768px) {
+    .footer-container{
+      width: 90%;
+    }
+  
+    .badge_join--text {
+  
+      font-size: 1.3rem;
+    }
+  
+    .footer_title--text {
+      font-size: 4.6rem; 
+    }
+  
+    .footer_input {
+      width: 60%;
+    }
+  
+    .address_text{
+  
+      font-size: 1.4rem;
+      line-height: 24px;
+      width: 80%;
+    }
+  
+    .worktime{
+      font-size: 1.4rem;
+    }
+  
+    .contact_phone--text,
+    .contact_mail--text{
+  
+      font-size: 1.6rem;
+      line-height: 28px;
+  
+    }
+  
+  
+    .widgets {
+  
+      flex-direction: row;
+      justify-content: space-between;
+      
+    }
+  
+    .address,
+    .socials,
+    .contact {
+      flex-basis: 30%;
+      align-items: flex-start;
+    }
+  
+  
+    .copyright__wrapper{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  
+  
+    .navigation{
+      padding: 4px 30px;
+    }
+  
+  
+    .copyright_text,
+    .copyright_link {
+  
+     font-size: 1.4rem;
+  
+    } 
+  
+  
+    .copyright{
+    
+      padding-right: 0;
+      padding-left: 0;
+      padding-top: 20px;
+  
+    }
+    
+    .copyright_text{
+    
+      padding: 0;
+      text-align: left;
+   
+    }
+    
+  
+  }
+  
+  
+  /* ............................................................ second mediaqueri .............................................................. */
+  
+  @media (min-width: 800px) {
+    .footer-container{
+      width: 85%;
+    }
+  }
+  
+  /* ............................................................ third mediaqueri .............................................................. */
+  
+  @media (min-width: 860px) {
+    .footer-container{
+      width: 80%;
+    }
+  }
+  
+  /* ............................................................ fourth mediaqueri .............................................................. */
+  @media (min-width: 900px) {
+    .footer-container{
+      width: 75%;
+    }
+    
+  }
+  
+  
+  /* ............................................................ fifth mediaqueri .............................................................. */
+  @media (min-width: 938px){
+  
+    .footer-container{
+      width: 75%;
+    }
+    
+  }
+  
+  /* ............................................................ sixth mediaqueri .............................................................. */
+  
+  @media (min-width: 959px) {
+    .footer-container{
+      width: 98%;
+      
+    }
+  
+    .newsletter_badge--join {
+      
+      padding: 4px 0;
+    }
+  
+    .badge_join--text {
+      font-size: 1.4rem;
+    }
+  
+    
+    .footer_title--text{
+      font-size: 5.4rem;
+    }
+  
+    .footer_input {
+      width: 560px;
+    }
+  
+  
+    .footer_sign--btn {
+      font-size: 1.6rem;
+   
+    }
+  
+  
+  
+    .widgets {
+      flex-direction: row;
+      justify-content: space-between;
+      
+    }
+    
+  
+    .address_text,
+    .worktime {
+      font-size: 1.6rem;
+      line-height: 28px;
+    }
+  
+  
+  
+    .contact_phone--text,
+    .contact_mail--text{
+      
+      font-size: 1.8rem;
+      
+    }
+  
+  
+  
+    .contact_phone--icon{
+      width: 20px;
+    }
+  
+  
+    .contact_mail--icon{
+      width: 20px;
+    
+    }
+  
+  
+    .contact_phone,
+    .contact_mail {
+      
+      gap: 6px;
+      padding: 8px 0;
+      
+    }
+  
+  
+    .copyright_text{
+      font-size: 1.6rem;
+      
+    }
+  
+  }
+  
+                                                                  /* desktop  */
+  
+  /* ............................................................ first mediaqueri .............................................................. */
+  @media (min-width: 963px){
+    .footer-container{
+      width: 95%;
+      
+    }
+  
+  } 
+  
+  /* ............................................................ second mediaqueri .............................................................. */
+  @media (min-width:1000px){
+    .footer-container{
+      width: 92%;
+      
+    }
+  }
+  
+  /* ............................................................ third mediaqueri .............................................................. */
+  @media (min-width:1020px){
+      .footer-container{
+        width: 90%;
+        
+      }
+  }
+  
+  /* ............................................................ fourth mediaqueri .............................................................. */
+  @media (min-width:1114px){
+        .footer-container{
+          width: 85%;
+        
+        }
+  
+  }
+  
+  /* ............................................................ fifth mediaqueri .............................................................. */
+  
+  @media (min-width:1120px){
+    .footer-container{
+      width: 80%;
+    
+    }
+  
+  }
+  
+  /* ............................................................ sixth mediaqueri .............................................................. */
+  @media (min-width:1160px){
+    .footer-container{
+      width: 75%;
+    
+    }
+  
+  }
+  
+  /* ............................................................ seventh mediaqueri .............................................................. */
+  
+  @media (min-width:1239px){
+    .footer-container{
+      width: 95%;
+    
+    }
+  
+    .address_text{
+      
+      width: 60%;
+    }
+  
+  }
+  
+  /* ............................................................ eights mediaqueri .............................................................. */
+  @media (min-width:1240px){
+    .footer-container{
+      width: 85%;
+    
+    }
+   
+  }
+  
+  /* ............................................................ ninth mediaqueri .............................................................. */
+  
+  @media (min-width:1260px){
+    .footer-container{
+      width: 65%;
+    
+    }
+  
+    
+  }
+  
+  
+  /* ...................................................................end code .................................................................. */
+  
