@@ -21,6 +21,10 @@ body {
   position: relative;
 }
 
+.active{
+  color: var(--color-navbar-items);
+}
+
 
 /* ------------------------  FAQ STARTS  ------------------------ */
 
