@@ -407,6 +407,112 @@ html {
     opacity: 1;
 }
 
+/* ------------------------  OUR WORK STARTS  ------------------------ */
+.ourWork {
+    padding-top: 100px;
+    background: url(../assets/images/backgrounds/seo3-bg4.png);
+    background-position: center;
+    padding-top: 150px;
+  }
+  .ourWork_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .ourWork_details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    
+  }
+.ourWork_badge {
+  color: var(--color-body-caption);
+  background-color: var( --color-body-caption-bg);
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  align-self: flex-start;
+  padding: 8px 16px;
+}
+  
+
+  .ourWork_title {
+    width: 100%;
+  }
+  .ourWork_title--text {
+    width: 90%;
+    color: var(--color-card-data);
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: left;
+  }
+  .ourWork_subtitle--text {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: var(--color-body);
+  }
+  .ourWork_specification {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .ourWork_specification--item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .ourWork .item_title--text {
+    color: var(--color-headings);
+    font-size: 1.3rem;
+    font-weight: 700;
+    
+  }
+  .bottom{
+    width: 90%;
+  }
+  .ourWork_about {
+    width: 128px;
+    height: 44px;
+    align-self: flex-start;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+  .ourWork_about--btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-btn);
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    opacity: 0.9;
+    transition: .3s ;
+  }
+  
+  .ourWork_about--btn:hover{
+    opacity: 1;
+  }
+  .ourWork_bg{
+    width: 100%;
+  }
+  .ourWork_bg--image {
+    width: 100%;
+    object-fit: cover;
+  }
+
 /* --------------- section3, our clients here ------------------- */
 /* clients container */
 .our-clients {
@@ -581,6 +687,17 @@ html {
         font-size: 1.8rem;
     }
 
+    /* our work section */
+    .ourWork_title--text {
+        font-size: 4.1rem;
+        width: 80%;
+    }
+      .ourWork_subtitle--text{
+        font-size: 1.4rem;
+        width: 95%;
+        line-height: 1.6;
+    }
+
     /* section3 media query changes */
     .caption__text {
         font-size: 4.2rem;
@@ -630,6 +747,22 @@ html {
         font-size: 1.8rem;
         line-height: 26px;
     }
+
+    /* our work section */
+    .ourWork_title--text {
+        font-size: 4.1rem;
+        width: 90%;
+      }
+    .ourWork_subtitle--text{
+        font-size: 1.4rem;
+        width: 90%;
+        line-height: 1.6;
+      }
+    
+      .item_title .item_title--text{
+        font-size:1.4rem;
+        width: 100%;
+      }
 
     /* section3 media query changes */
     .caption__text {
@@ -751,6 +884,31 @@ html {
         line-height: 1.8;
         
     }
+
+    /* our work section */
+    .ourWork_wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+      .ourWork_details {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 25px;
+        width: 90%;
+        
+      }
+      .ourWork_subtitle--text{
+        font-size: 1.4rem;
+        width: 95%;
+        line-height: 1.6;
+      }
+    
+      .item_title .item_title--text{
+        font-size:1.6rem;
+        
+      }
 
     /* section3 media query changes */
     .caption__text {
@@ -885,6 +1043,27 @@ html {
         
     }
 
+    /* our work section */
+    .ourWork_badge {
+        padding: 8px 20px;
+        font-size: 1.4rem;
+      }
+      .ourWork_title--text {
+          font-size: 4.6rem;
+        }
+        .ourWork_subtitle--text{
+          font-size: 1.4rem;
+          line-height: 1.6;
+        }
+      
+        .item_title .item_title--text{
+          font-size:1.5rem;
+          width: 100%;
+        }
+        .ourWork_about--btn{
+          font-size: 1.4rem;
+        }
+
     /* section3 media query changes */
     .caption__text {
         font-size: 4.6rem;
@@ -1010,6 +1189,23 @@ html {
         font-size: 1.4rem;
         line-height: 2;
     }
+
+    /* our work section */
+    .ourWork_title--text {
+        font-size: 5.4rem;
+        width: 90%;
+      }
+      .ourWork_subtitle--text{
+        font-size: 1.6rem;
+        line-height: 1.6;
+      }
+      .item_title .item_title--text{
+        font-size:1.8rem;
+        width: 100%;
+      }
+      .ourWork_about--btn{
+        font-size: 1.6rem;
+      }
 
     /* section3 media query changes */
     .caption__text {
