@@ -18,13 +18,15 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
+
 
 /* ------------------------  FAQ STARTS  ------------------------ */
 
 .faq {
   padding-top: 120px;
-  background: url(../images/seo3-sectionbg8.png);
+  background: url(../assets/images/seo3-sectionbg8.png);
   background-position: center top;
   background-repeat: no-repeat;
 }
@@ -88,7 +90,7 @@ body {
 
 .carousel {
     padding: 100px 0;
-    background: url(../images/carousel-bg.png);
+    background: url(../assets/images/carousel-bg.png);
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -199,7 +201,7 @@ body {
 
 .ourWork {
     padding-top: 100px;
-    background: url(../images/seo3-sectionbg4.png);
+    background: url(../assets/images/seo3-sectionbg4.png);
     background-position: center;
   }
   .ourWork_wrapper {
