@@ -1,10 +1,14 @@
+
+@import"main.css";
+
+
 @font-face {
     font-family:"archivo";
     src: url("../assets/fonts/archivo/Archivo-VariableFont_wdth\,wght.ttf");
 }
 
 /* Reset */
-html, body, div, span, applet, object, iframe,
+/* html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -22,10 +26,10 @@ time, mark, audio, video {
     border: 0;
     vertical-align: baseline;
     box-sizing: border-box;
-}
+} */
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
+/* article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
@@ -49,7 +53,7 @@ q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
-}
+} */
 *,
 *::after,
 *::before {
@@ -60,7 +64,7 @@ table {
 }
 
 /* Root Variables */
-:root {
+/* :root {
     --color-body: rgb(34, 34, 40);
     --color-headings: rgb(71, 50, 136);
     --color-navbar: rgba(140, 130, 115, 0.03);
@@ -77,7 +81,7 @@ table {
     --color-white: #fff;
     --color-black: #000;
     --color-badge:#FCF3DE;
-}
+} */
 
 /*------------------> services section <--------------------*/
 
@@ -123,8 +127,8 @@ table {
     text-transform: uppercase;
     padding: 8px 16px;
     margin-bottom: 15px;
-    background-color: var(--color-badge);
-    color:var(--color-label);
+    background-color: var( --color-body-caption-bg);
+    color:var(--color-body-caption);
     border-radius: 15px;
 }
 
@@ -161,6 +165,7 @@ table {
     font-size: 1.3rem;
     line-height: 1.9rem;
     margin-bottom: 32px;
+    color: var(--color-body);
 }
 .faq__btn{
     width: 100%;
@@ -204,7 +209,7 @@ table {
     display: flex;
     flex-direction: column;
     padding: 50px 40px 25px;
-    box-shadow:var(--card-box-shadow);
+    box-shadow:var(--color-card-services-box-shadow);
     border-radius: 25px;
     background-color: #fff;
 }
@@ -228,6 +233,7 @@ table {
     font-size: 1.3rem;
     line-height: 1.9;
     margin-bottom: 15px;
+    color: var(--color-body);
 
 }
 
@@ -258,8 +264,8 @@ table {
     
   }
 .ourWork_badge {
-  color: var(--color-label);
-  background-color: var(--color-label-bg);
+  color: var(--color-body-caption);
+  background-color: var( --color-body-caption-bg);
   border-radius: 15px;
   text-align: center;
   font-size: 1.3rem;
@@ -283,6 +289,7 @@ table {
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 2rem;
+    color: var(--color-body);
   }
   .ourWork_specification {
     width: 100%;
