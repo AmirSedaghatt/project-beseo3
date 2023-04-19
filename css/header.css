@@ -1,0 +1,447 @@
+@import "project-beseo3/css/main.css";
+
+/* ............................ root-color .................................................... */
+:root {
+  --color-body: rgb(34, 34, 40);
+  --color-headings: rgb(71, 50, 136);
+  --color-navbar-bg: rgb(30, 32, 33);
+  --color-navbar-items: rgb(121, 100, 239);
+  --color-menu-toggle: rgb(252, 176, 37);
+  --color-mobile-menu: rgb(31, 25, 69);
+  --color-mobile-menu-items: rgb(191, 185, 243);
+  --color-footer: rgb(55, 43, 125);
+  --color-footer-input-placeholder: rgba(80, 71, 160, 1);
+  --color-footer-line: rgba(197, 196, 252, 0.1);
+  --color-body-caption-bg: rgba(252, 168, 15, 0.13);
+  --color-body-caption: rgb(252, 168, 15);
+  --color-card-data: rgb(55, 43, 125);
+  --color-card-caption: rgb(65, 52, 142);
+  --color-card-box-shadow:  0px 10px 30px rgba(44, 34, 100, 0.2);
+  --color-card-services-box-shadow: 0px 10px 30px rgba(55,43,125,.1);
+  --color-faq-text: #444;
+  --color-btn: rgb(123, 102, 239);
+  --color-light-btn: rgb(197, 196, 252);
+  --color-sign-up-btn: rgb(252, 168, 15);
+  --color-alert: rgb(237, 59, 46);
+  --color-white: #fff;
+  --color-black: #000;
+}
+
+
+/* ................................................ font design ................................................................ */
+@font-face {
+  font-family: Archivo;
+  src: url(../font/Archivo-VariableFont_wdth\,wght.ttf);
+}
+
+/* .................................................. default-setting .......................................................... */
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Archivo,sans-serif;
+  font-size:10px ;
+}
+
+/* ...................................... start mobile-first ............................................................. */
+
+
+
+
+/* ................................... main container ........................................................... */
+.nav {
+  width: 100%;
+  position:fixed;
+  top: 0;
+  transition: .4s;
+  z-index: 10;
+}
+
+
+/* .............................. helper container .......................................................... */
+
+.nav_container {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+
+.nav_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+/* .................................. navbar a-tag design ................................................................... */
+.nav a.active {
+  color: var(--color-navbar-items);
+}
+
+
+.nav a {
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+/* ........................................... making sections in navbar ............................................ */
+.nav_right,
+.nav_left {
+  display:flex;
+  align-items: center;
+  flex-basis: 50%;
+}
+
+
+.nav_right {
+  justify-content: flex-end;
+  gap: 40px;
+}
+
+/* ........................................................ logo design ............................................................. */
+.nav_logo {
+  transition: all .4s ease;
+  cursor: pointer;
+
+}
+.nav_logo--img {
+  width: 75%;
+}
+
+
+/* ...............................................................menu desktop ........................................................... */
+.nav_menu {
+  display: none;
+}
+
+.nav_menu--list {
+  width: 100;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.menu_list--item :hover{
+  color: var(--color-navbar-items);
+}
+
+
+.menu_list--link {
+  padding: 0 20px;
+  font-size: 17px;
+  color: #222228;
+  font-weight: 500;
+}
+
+
+/* ........................................................menu mobile .................................................................. */
+.mobile_nav--wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.nav_mobile--menu {
+  position: fixed;
+  height: 200vh;
+  width: 250px;
+  top: 0;
+  right: -250px;
+  background-color: var(--color-mobile-menu);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: right .4s ease;
+}
+
+.show{
+  right: 0;
+}
+
+
+.mobile_menu--close {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 16px;
+  cursor: pointer;
+}
+
+
+.menu_close--btn {
+  width: 28px;
+}
+
+
+.nav_mobile--button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var( --color-light-btn);
+  border-radius: 24px;
+  width: 85%;
+  height: fit-content;
+  overflow: hidden;
+}
+
+
+.mobile_button--btn {
+  
+  width: 100%;
+  padding:12px ;
+  height: 144px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+
+
+.mobile_btn--text {
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+
+.nav_mobile--list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 0;
+}
+
+
+.mobile_list--item {
+  width: 100%;
+  padding: 10px 20px;
+  border-top: 1px solid var(--color-footer-line);
+}
+
+
+
+.mobile_list--item:last-child{
+  border-bottom: 1px solid var(--color-footer-line);
+}
+
+
+.mobile_list--link {
+  font-size: 16px;
+  color: var( --color-light-btn);
+  font-weight: 500;
+}
+
+/* ............................................................hamburgur menu ................................................................ */
+
+.nav_hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.nav_hamburger--img {
+  width: 20px;
+}
+
+/* ...........................................................button buy now .................................................................... */
+.nav_button {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: var( --color-light-btn);
+  border-radius: 24px;
+  width: 160px;
+  height: 36px;
+  overflow: hidden;
+}
+
+
+.nav_button--btn {
+  /* width: 144px;
+  height: 64px; */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+
+
+.nav_button:hover{
+  background-color:var(--color-mobile-menu-items);
+
+}
+
+
+
+.btn_text {
+  color: var(--color-white);
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+.btn_icon {
+  width: 20px;
+}
+
+/* ..............................................................end mobile-first ................................................ */
+
+
+                                                                    /*tablet*/
+
+  /*.............................................................. first mediaqueri ...................................................................  */
+
+@media (min-width: 766px) {
+  .nav_button {
+    display: block;
+    
+  }
+  .nav_container{
+    width: 97%;
+  }
+
+  .nav_logo{
+    padding: 20px 0;
+  }
+  .nav_logo--img {
+
+    width: 70%;
+    
+  }
+
+  .nav_button{
+    width:136px ;
+    height:32px ;
+  }
+
+  .btn_text {
+    color: var(--color-white);
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+}
+
+
+/*.............................................................. second mediaqueri ...................................................................  */
+
+@media (min-width: 768px) {
+  .nav_button {
+    display: block;
+    
+  }
+
+
+  .nav_container{
+    width: 95%;
+  }
+
+  .nav_logo{
+    padding: 20px 0;
+  }
+
+
+  .nav_logo--img {
+    width: 86%;
+    
+  }
+
+
+  .nav_button{
+    width:144px ;
+    height:40px ;
+  }
+
+
+  .btn_text {
+    
+    font-size: 1.4rem; 
+  }
+
+
+  .nav_right{
+    gap: 60px;
+  }
+
+}
+
+
+/*.............................................................. third mediaqueri ...................................................................  */
+
+
+@media (min-width: 958px) {
+  .nav_button{
+    width:160px ;
+    height:40px ;
+  }
+
+  .btn_text {
+    
+    font-size: 1.6rem;
+   
+  }
+
+}
+
+                                                                /* desktop */
+
+/*.............................................................. first mediaqueri ...................................................................  */
+                                                                
+@media (min-width: 1240px) {
+
+  .nav_wrapper{
+    padding: 0;
+  }
+
+
+  .nav_hamburger {
+    display: none;
+  }
+
+
+  .nav_menu {
+    display: block;
+  }
+
+
+  .nav_container{
+    width: 96%;
+  }
+
+
+  .nav_logo--img {
+    width: 90%;
+  }
+
+
+  .nav_right{
+    gap: 30px;
+  }
+
+}
