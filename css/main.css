@@ -1,4 +1,8 @@
 /* Reset */
+html {
+    font-size: 62.5%;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,16 +51,25 @@ table {
 :root {
     --color-body: rgb(34, 34, 40);
     --color-headings: rgb(71, 50, 136);
-    --color-navbar: rgba(140, 130, 115, 0.03);
     --color-navbar-bg: rgb(30, 32, 33);
     --color-navbar-items: rgb(121, 100, 239);
     --color-menu-toggle: rgb(252, 176, 37);
-    --color-label-bg: rgba(252, 168, 15, 0.13);
-    --color-label: rgb(252, 168, 15);
+    --color-mobile-menu: rgb(31, 25, 69);
+    --color-mobile-menu-items: rgb(191, 185, 243);
+    --color-footer: rgb(55, 43, 125);
+    --color-footer-input-placeholder: rgba(80, 71, 160, 1);
+    --color-footer-line: rgba(197, 196, 252, 0.1);
+    --color-body-caption-bg: rgba(252, 168, 15, 0.13);
+    --color-body-caption: rgb(252, 168, 15);
     --color-card-data: rgb(55, 43, 125);
-    --card-box-shadow: rgba(44, 34, 100, 0.2) 0px 10px 30px;
+    --color-card-caption: rgb(65, 52, 142);
+    --color-card-box-shadow:  0px 10px 30px rgba(44, 34, 100, 0.2);
+    --color-card-services-box-shadow: 0px 10px 30px rgba(55,43,125,.1);
+    --color-faq-text: #444;
     --color-btn: rgb(123, 102, 239);
     --color-light-btn: rgb(197, 196, 252);
+    --color-sign-up-btn: rgb(252, 168, 15);
+    --color-alert: rgb(237, 59, 46);
     --color-white: #fff;
     --color-black: #000;
 }
