@@ -44,7 +44,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Archivo,sans-serif;
-  font-size:10px ;
 }
 
 /* ........................................ main-container ........................................ */
@@ -266,11 +265,13 @@
 
 .facebook {
   width: 22px;
+  cursor: pointer;
 }
 
 
 .skype {
   width: 27px;
+  cursor: pointer;
 }
 
 
