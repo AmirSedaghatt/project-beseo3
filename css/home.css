@@ -20,6 +20,10 @@ html {
     font-size: 62.5%;
 }
 
+.active{
+    color: var(--color-navbar-items);
+  }
+
 
 /* ------------------------- section1, masthead here --------------------------- */
 /* Main Container */
